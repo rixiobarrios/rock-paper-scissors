@@ -2,8 +2,9 @@
 
 //start the game/button
 // let startGame()
-playerScore = 0;
-computerScore = 0;
+//score
+let playerScore = 0;
+let computerScore = 0;
 //user choses from three options/buttons
 //<---- MDN syntax ---->
 let playerChoice;
@@ -13,6 +14,7 @@ rockButton.addEventListener('click', function(event) {
     console.log('The rock button has been clicked');
     playerChoice = event.target.innerText;
     console.log('playerChoice', playerChoice);
+    computerPlay();
 });
 
 const paperButton = document.getElementById('paper');
@@ -20,6 +22,7 @@ paperButton.addEventListener('click', function(event) {
     console.log('The paper button has been clicked');
     playerChoice = event.target.innerText;
     console.log('playerChoice', playerChoice);
+    computerPlay();
 });
 
 const scissorsButton = document.getElementById('scissors');
@@ -27,6 +30,7 @@ scissorsButton.addEventListener('click', function(event) {
     console.log('The scissors button has been clicked');
     playerChoice = event.target.innerText;
     console.log('playerChoice', playerChoice);
+    computerPlay();
 });
 //1. need to add event listeners
 
@@ -39,43 +43,25 @@ scissorsButton.addEventListener('click', function(event) {
 
 //4. tell the computer that is its turn
 //     let computerChoice =
-//         //computer choses
-//         //1. create an array with the three elements to chose from
+//computer choses
+//1. create an array with the three elements to chose from
 //     let optionsToSelect = ['rock', 'paper', 'scissors'];
-// //2. generate a random response using math.random(google get a random element from an array)
-// //<---- geeksforgeeks syntax ---->
-result = [];
-arr = ['rock', 'paper', 'scissors'];
-
-function computerChoice() {
-    result.innerText = arr[Math.floor(Math.random() * arr.length)];
-    console.log(result.innerText);
+//2. generate a random response using math.random(google get a random element from an array)
+//<---- geeksforgeeks syntax ---->
+arr = ['Rock', 'Paper', 'Scissors'];
+let computerChoice;
+function computerPlay() {
+    computerChoice = arr[Math.floor(Math.random() * arr.length)];
+    console.log(computerChoice);
+    calculateResults();
 }
 
-computerChoice();
 //3. store computers choice in a variable
 // computerChoice = [];
 //we compare the choices
 //1. possible use a switch statement or if statement
 //<---- w3schools syntax ---->
-// switch (function()) {
-//     case 'rock' === 'scissors':
-//     case 'paper' === 'rock':
-//     case 'scissors' === 'paper':
-//         answer = 'You Win!';
-//         break;
-//     case 'rock' === 'paper':
-//     case 'paper' === 'scissors':
-//     case 'scissors' === 'rock':
-//         answer = 'You Lose';
-//         break;
-//     case 'rock' === 'rock':
-//     case 'paper' === 'paper':
-//     case 'scissors' === 'scissors':
-//         answer = 'Its a Draw';
-//         break;
-// }
-// console.log(computerChoices);
+
 //<---- MDN syntax ---->
 function calculateResults() {
     if (playerChoice === 'Rock' && computerChoice === 'Paper') {
@@ -99,25 +85,21 @@ function calculateResults() {
     }
 }
 
-calculateResults();
 //determine and declare winner
 
 //1. update the screen possible use innerText and
 // .innerText
 //increase score
-//1. possibly use the incrementor
+//1. possibly use the incrementor or a counter
+//<---- teamtreehouse ---->
+computerScore += 1;
+playerScore += 1;
 //i++
 //stop score
-// for (let counter = 1; counter < 6; counter++) {
-//     let userPrompt = prompt('Do you choose heads or tails?');
-//     if (userPrompt === 'heads') {
-//         console.log("You've chosen heads; the computer chooses tails.");
-//     } else if (userPrompt === 'tails') {
-//         console.log("You've chosen tails; the computer chooses heads.");
-//     } else {
-//         console.log(
-//             "You've chosen " + userPrompt + ', which is an invalid choice.'
-//         );
-//     }
+// for (let counter = 1; counter < 9; counter++) {
+// clear score
+//<---- teamtreehouse ---->
+// const clearScore() {
+//     playerScore = 0;
+//     computerScore = 0;
 // }
-////////////
