@@ -1,11 +1,11 @@
-![Example Image](/img/log.png)
+![logo](https://user-images.githubusercontent.com/55994508/71867756-1cefd800-30d1-11ea-8dd0-f1920ee183d5.png)
 
 # Project 1: Rock Paper Scissors Game
 
 This is a game project made in HTML, CSS and Javascript. Its a very simple game of Rock, paper scissors. I made this game as part of my first project assignment for my coding bootcamp school (General Assembly).
 
 Here is a GIF of the game in action:
-![Example Image](/images/example.gif)
+![Example Image](/img/example.gif)
 
 ## Target Audience
 
