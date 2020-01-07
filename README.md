@@ -33,7 +33,7 @@ Chose one of three choices to play against the computer. Once you have chosen, t
 
 ## H2 Bugs
 
-none yet
+None yet
 
 ## H2 Future additions
 
