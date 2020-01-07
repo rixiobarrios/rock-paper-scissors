@@ -1,21 +1,23 @@
-![Example Image](./img/log.png)
+![Example Image](/img/log.png)
 
-# H1 Project 1: Rock Paper Scissors Game
+# Project 1: Rock Paper Scissors Game
 
-This is a game project made in HTML, CSS and Javascript. Its a very simple game of Rock, paper scissors. I made this project as part of my first project assignment for my coding bootcamp school (General Assembly).
+This is a game project made in HTML, CSS and Javascript. Its a very simple game of Rock, paper scissors. I made this game as part of my first project assignment for my coding bootcamp school (General Assembly).
 
 Here is a GIF of the game in action:
-![Example Image](./images/example.gif)
+![Example Image](/images/example.gif)
 
-## H2 Target Audience
+## Target Audience
 
 This game is targeting kids from 3 to 100 years old.
 
-## H2 Instructions
+## Instructions
 
-Chose one of three choices to play against the computer. Once you have chosen, the computer would also make a choice and a win, a lose or a draw message would be posted for each party.
+Chose one of three options to play against the computer.
+Once you have chosen, the computer would also make a choice.
+A win, a lose or a draw message would be posted for each party.
 
-## H2 Rules
+## Rules
 
 -   Rock smashes scissors = Rock wins
 -   Paper covers Rock = Paper wins
@@ -23,19 +25,20 @@ Chose one of three choices to play against the computer. Once you have chosen, t
 -   Rock and rock = Draw
 -   Paper and paper = Draw
 -   Scissor and Scissors = Draw
+-   Game ends after score reaches 9
 
-## H2 Features
+## Features
 
--   Scoreboard tops after 10 wins
+-   Scoreboard tops after 9 wins
 -   Reset buttons restart the game
--   Three buttons picks the three options
--   2 graphic representations change to reflect chosen game object
+-   Three buttons pick the three options
+-   2 images change to reflect choices
 
-## H2 Bugs
+## Bugs
 
 None yet
 
-## H2 Future additions
+## Future additions
 
 -   Animations
 -   Mobile phone layout
@@ -43,7 +46,7 @@ None yet
 -   Unlockable/achievements graphics
 -   New UI for chosen game object.
 
-## H2 Attributions
+## Attributions
 
 Personal branding logo for this file was created using [freelogodesign.org](https://www.freelogodesign.org/)
 
@@ -55,4 +58,4 @@ Fonts provided by [dafont.com](https://www.dafont.com/)
 
 Background vector created by [freepik.com](https://www.freepik.com/home)
 
-## H2 Thanks
+## Thanks
