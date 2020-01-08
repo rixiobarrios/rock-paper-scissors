@@ -1,7 +1,79 @@
 /* PROJECT 1 */
 /* w3schools */
 /* MDN */
-/* body {
+body {
     background-image: url('/img/vector.jpg');
-    background-size: cover;
-} */
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+}
+/* w3schoos */
+@font-face {
+    font-family: 'komikax';
+    src: url('/font/KOMIKAX_.ttf');
+}
+
+div {
+    font-family: komikax;
+    color: white;
+}
+
+h1 {
+    font-family: komikax;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: komikax;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: komikax;
+    color: white;
+}
+
+#rock {
+    background: url(/img/rock_button.png) 0 0 transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    height: 200px;
+    width: 200px;
+    color: transparent;
+    position: relative;
+}
+#rock:hover {
+    background: url(/img/rock_button.png);
+}
+
+#paper {
+    background: url(/img/paper_button.png) 0 0 transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    height: 200px;
+    width: 200px;
+    color: transparent;
+    position: relative;
+}
+#paper:hover {
+    background: url(/img/paper_button.png);
+}
+#scissors {
+    background: url(/img/scissors_button.png) 0 0 transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    height: 200px;
+    width: 200px;
+    color: transparent;
+    position: relative;
+}
+#scissors:hover {
+    background: url(/img/scissors_button.png);
+}

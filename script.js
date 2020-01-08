@@ -5,6 +5,7 @@
 //score
 let playerScore = 0;
 let computerScore = 0;
+let drawScore = 0;
 
 //player choses from three options/buttons
 //add event listeners
@@ -70,48 +71,52 @@ function calculateResults() {
         document.getElementById('announcement').innerText = 'YOU LOSE';
         computerScore += 1;
     } else if (playerChoice === 'Rock' && computerChoice === 'Rock') {
-        document.getElementById('announcement').innerText = 'ITS A DRAW';
+        document.getElementById('announcement').innerText = "IT'S A DRAW";
+        drawScore += 1;
     } else if (playerChoice === 'Paper' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'ITS A DRAW';
+        document.getElementById('announcement').innerText = "IT'S A DRAW";
+        drawScore += 1;
     } else if (playerChoice === 'Scissors' && computerChoice === 'Scissors') {
-        document.getElementById('announcement').innerText = 'ITS A DRAW';
+        document.getElementById('announcement').innerText = "IT'S A DRAW";
+        drawScore += 1;
     }
-    console.log('player', playerScore, 'computer', computerScore);
+    replacePlayerImage();
+    replaceComputerImage();
+    document.getElementById('draw-score').innerText = drawScore;
     document.getElementById('player-score').innerText = playerScore;
     document.getElementById('computer-score').innerText = computerScore;
+    displayResults();
 }
-//possibly use the incrementor or a counter
-//<---- teamtreehouse ---->
 
-//i++
 //stop score
-// for (let counter = 1; counter < 9; counter++) {
 // clear score
 //<---- teamtreehouse ---->
-function clearScore() {
+function displayResults() {
     if (playerScore === 9) {
-        alert('Player Wins Match!');
+        alert('YOU WON THE MATCH!');
     } else if (computerScore === 9) {
-        alert('Game Over');
+        alert('GAME OVER');
+    } else if (drawScore === 9) {
     }
 }
 //change images
-// document.getElementById('rock').src = '/img/rock.png';
-// document.getElementById('paper').src = '/img/paper.png';
-// document.getElementById('scissors').src = '/img/scissors.png';
 
-// function replaceImage() {
-//     if (playerChoice === 'Rock') {
-//         document.getElementById('player-hand').src = '/img/rock_left.png';
-//     } else if (playerChoice === 'Paper') {
-//         document.getElementById('player-hand').src = '/img/paper_left.png';
-//     } else if (playerChoice === 'Scissors') {
-//         document.getElementById('player-hand').src = '/img/scissors_left.png';
-//     } else if (computerChoice === 'Rock') {
-//         document.getElementById('computer-hand').src = '/img/rock.png';
-//     } else if (computerChoice === 'Paper') {
-//         document.getElementById('computer-hand').src = '/img/paper.png';
-//     } else if (computerChoice === 'Scissors') {
-//         document.getElementById('computer-hand').src = '/img/scissors.png';
-//     }
-// }
+function replacePlayerImage() {
+    if (playerChoice === 'Rock') {
+        document.getElementById('player-hand').src = '/img/rock_left.png';
+    } else if (playerChoice === 'Paper') {
+        document.getElementById('player-hand').src = '/img/paper_left.png';
+    } else if (playerChoice === 'Scissors') {
+        document.getElementById('player-hand').src = '/img/scissors_left.png';
+    }
+}
+
+function replaceComputerImage() {
+    if (computerChoice === 'Rock') {
+        document.getElementById('computer-hand').src = '/img/rock.png';
+    } else if (computerChoice === 'Paper') {
+        document.getElementById('computer-hand').src = '/img/paper.png';
+    } else if (computerChoice === 'Scissors') {
+        document.getElementById('computer-hand').src = '/img/scissors.png';
+    }
+}
