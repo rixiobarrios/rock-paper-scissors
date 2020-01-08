@@ -1,4 +1,4 @@
-![logo](https://user-images.githubusercontent.com/55994508/71867756-1cefd800-30d1-11ea-8dd0-f1920ee183d5.png)
+![logo](https://user-images.githubusercontent.com/55994508/72009975-96e0a800-321c-11ea-8bf8-863cd8a4c9fd.png)
 
 # Project 1: Rock Paper Scissors Game
 
@@ -30,12 +30,6 @@ The earliest form of Rock Paper Scissors was created in Japan and is called Jank
 
 Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
 
-## Strategy
-
-Thе fіrѕt strategy іѕ thе соuntеrtасtіс: Lеt’ѕ say уоu рlауеd scissors аnd your opponent рlауеd rосk. Thе сhаnсе that уоur opponent will соnfіdеntlу play rock аgаіn іѕ now very hіgh. What thаt means tо уоu: аntісіраtе thаt аnd рlау paper. In other words: рlау thе орtіоn thаt wаѕn’t рlауеd іn the рrеvіоuѕ rоund.
-
-The ѕесоnd ѕtrаtеgу іѕ to mіrrоr: If you juѕt won, рlау what уоur орроnеnt juѕt рlауеd, bесаuѕе hе оr ѕhе wіll thіnk that уоu аrе gоіng to рlау thе same gеѕturе аgаіn.
-
 ## Instructions
 
 Chose one of three options to play against the computer.
@@ -44,13 +38,19 @@ A win, a lose or a draw message would be posted for each party.
 
 ## Rules
 
--   Rock smashes scissors = Rock wins
--   Paper covers Rock = Paper wins
--   Scissors cut paper = Scissors wins
--   Rock and rock = Draw
--   Paper and paper = Draw
--   Scissor and Scissors = Draw
+-   Rock smashes scissors, rock wins
+-   Paper covers Rock, paper wins
+-   Scissors cut paper, scissors wins
+-   Rock and rock, it's a draw
+-   Paper and paper, it's a draw
+-   Scissor and Scissors, it's a draw
 -   Game ends after score reaches 9
+
+## Strategy
+
+Thе fіrѕt strategy іѕ thе соuntеrtасtіс: Lеt’ѕ say уоu рlауеd scissors аnd your opponent рlауеd rосk. Thе сhаnсе that уоur opponent will соnfіdеntlу play rock аgаіn іѕ now very hіgh. What thаt means tо уоu: аntісіраtе thаt аnd рlау paper. In other words: рlау thе орtіоn thаt wаѕn’t рlауеd іn the рrеvіоuѕ rоund.
+
+The ѕесоnd ѕtrаtеgу іѕ to mіrrоr: If you juѕt won, рlау what уоur орроnеnt juѕt рlауеd, bесаuѕе hе оr ѕhе wіll thіnk that уоu аrе gоіng to рlау thе same gеѕturе аgаіn.
 
 ## Features
 
@@ -73,7 +73,7 @@ None yet
 
 ## Attributions
 
-Rules, instructions and general information for this game were taken from the Rock Paper Scissors Association's website [wrpsa](https://www.wrpsa.com)
+Rules, instructions and general information for this game were taken from The World Rock Paper Scissors Association's website [wrpsa](https://www.wrpsa.com)
 
 Personal branding logo for this file was created using [freelogodesign.org](https://www.freelogodesign.org)
 
@@ -93,5 +93,5 @@ Esin Saribudak, Jennifer Meade, Jared Morgan
 General Assembly Students:
 Sage Kearny, Suzan Adams
 
-Freecodecamp Volunteer
+Freecodecamp Volunteer:
 Robert Groves

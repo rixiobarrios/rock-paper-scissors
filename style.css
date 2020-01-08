@@ -5,10 +5,12 @@ body {
     background-image: url('/img/vector.jpg');
     background-color: #cccccc;
     background-repeat: no-repeat;
-    background-position: cover;
-    background-size: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
 }
-/* w3schoos */
+/* stack overflow */
 @font-face {
     font-family: 'komikax';
     src: url('/font/KOMIKAX_.ttf');
@@ -17,13 +19,18 @@ body {
 div {
     font-family: komikax;
     color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 h1 {
     font-family: komikax;
-    font-size: 100px;
+    font-size: 10vh;
     color: white;
     text-align: center;
+    /* text-shadow: 2px 2px 0px black; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 h2 {
@@ -36,7 +43,7 @@ h3 {
     font-family: komikax;
     color: white;
 }
-
+/* stack overflow */
 #rock {
     background: url(/img/rock_button.png) 0 0 transparent;
     background-repeat: no-repeat;
@@ -46,9 +53,17 @@ h3 {
     width: 200px;
     color: transparent;
     position: relative;
+    cursor: pointer;
+    transition: transform 0.25s ease-in;
+    font-size: 0;
 }
+
 #rock:hover {
-    background: url(/img/rock_button.png);
+    transform: translateY(-1rem);
+}
+/* medium.com */
+#rock:focus {
+    outline: none;
 }
 
 #paper {
@@ -60,10 +75,19 @@ h3 {
     width: 200px;
     color: transparent;
     position: relative;
+    cursor: pointer;
+    transition: transform 0.25s ease-in;
+    font-size: 0;
 }
+
 #paper:hover {
-    background: url(/img/paper_button.png);
+    transform: translateY(-1rem);
 }
+
+#paper:focus {
+    outline: none;
+}
+
 #scissors {
     background: url(/img/scissors_button.png) 0 0 transparent;
     background-repeat: no-repeat;
@@ -73,7 +97,29 @@ h3 {
     width: 200px;
     color: transparent;
     position: relative;
+    cursor: pointer;
+    transition: transform 0.25s ease-in;
+    font-size: 0;
+    text-decoration: none;
 }
+
 #scissors:hover {
-    background: url(/img/scissors_button.png);
+    transform: translateY(-1rem);
+}
+
+#scissors:focus {
+    outline: none;
+}
+
+/* css-tricks */
+.shake {
+    animation: 0.45s shake 3;
+}
+@keyframes shake {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
 }

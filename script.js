@@ -6,6 +6,8 @@
 let playerScore = 0;
 let computerScore = 0;
 let drawScore = 0;
+const playerHand = document.querySelector('#player-hand');
+const computerHand = document.querySelector('#computer-hand');
 
 //player choses from three options/buttons
 //add event listeners
@@ -14,26 +16,26 @@ let drawScore = 0;
 let playerChoice;
 
 const rockButton = document.getElementById('rock');
-rockButton.addEventListener('click', function(event) {
-    playerChoice = event.target.innerText;
-    console.log('playerChoice', playerChoice);
-    computerPlay();
-});
+rockButton.addEventListener('click', handleClick);
 
 const paperButton = document.getElementById('paper');
-paperButton.addEventListener('click', function(event) {
-    playerChoice = event.target.innerText;
-    console.log('playerChoice', playerChoice);
-    computerPlay();
-});
+paperButton.addEventListener('click', handleClick);
 
 const scissorsButton = document.getElementById('scissors');
-scissorsButton.addEventListener('click', function(event) {
-    playerChoice = event.target.innerText;
-    console.log('playerChoice', playerChoice);
-    computerPlay();
-});
+scissorsButton.addEventListener('click', handleClick);
 
+function handleClick(event) {
+    playerHand.src = '/img/rock_left.png';
+    computerHand.src = '/img/rock.png';
+    playerChoice = event.target.innerText;
+    playerHand.classList.add('shake');
+    computerHand.classList.add('shake');
+    setTimeout(function() {
+        playerHand.classList.remove('shake');
+        computerHand.classList.remove('shake');
+        computerPlay();
+    }, 1500);
+}
 //create an array with the three elements to chose from
 //generate a random simulated computer response using math.random
 //store computers choice in a variable
@@ -46,6 +48,9 @@ function computerPlay() {
     calculateResults();
 }
 
+//slow response down setTimeout()???
+//Animation
+
 //we compare the choices use a switch statement or if statement
 //determine and declare winner
 //update the screen possible use innerText
@@ -53,13 +58,13 @@ function computerPlay() {
 //<---- MDN syntax ---->
 function calculateResults() {
     if (playerChoice === 'Rock' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'PLAYER WINS!';
+        document.getElementById('announcement').innerText = 'PLAYER WINS';
         playerScore += 1;
     } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
-        document.getElementById('announcement').innerText = 'PLAYER WINS!';
+        document.getElementById('announcement').innerText = 'PLAYER WINS';
         playerScore += 1;
     } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'PLAYER WINS!';
+        document.getElementById('announcement').innerText = 'PLAYER WINS';
         playerScore += 1;
     } else if (playerChoice === 'Rock' && computerChoice === 'Paper') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
@@ -93,30 +98,31 @@ function calculateResults() {
 //<---- teamtreehouse ---->
 function displayResults() {
     if (playerScore === 9) {
-        alert('YOU WON THE MATCH!');
+        alert('YOU WON THE MATCH');
     } else if (computerScore === 9) {
         alert('GAME OVER');
     } else if (drawScore === 9) {
+        alert("IT'S A TIE");
     }
 }
 //change images
-
+//<----
 function replacePlayerImage() {
     if (playerChoice === 'Rock') {
-        document.getElementById('player-hand').src = '/img/rock_left.png';
+        playerHand.src = '/img/rock_left.png';
     } else if (playerChoice === 'Paper') {
-        document.getElementById('player-hand').src = '/img/paper_left.png';
+        playerHand.src = '/img/paper_left.png';
     } else if (playerChoice === 'Scissors') {
-        document.getElementById('player-hand').src = '/img/scissors_left.png';
+        playerHand.src = '/img/scissors_left.png';
     }
 }
 
 function replaceComputerImage() {
     if (computerChoice === 'Rock') {
-        document.getElementById('computer-hand').src = '/img/rock.png';
+        computerHand.src = '/img/rock.png';
     } else if (computerChoice === 'Paper') {
-        document.getElementById('computer-hand').src = '/img/paper.png';
+        computerHand.src = '/img/paper.png';
     } else if (computerChoice === 'Scissors') {
-        document.getElementById('computer-hand').src = '/img/scissors.png';
+        computerHand.src = '/img/scissors.png';
     }
 }
