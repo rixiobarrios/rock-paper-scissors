@@ -23,7 +23,8 @@ paperButton.addEventListener('click', handleClick);
 
 const scissorsButton = document.getElementById('scissors');
 scissorsButton.addEventListener('click', handleClick);
-
+//slow response down setTimeout()
+//<---- w3schools ---->
 function handleClick(event) {
     playerHand.src = '/img/rock_left.png';
     computerHand.src = '/img/rock.png';
@@ -49,8 +50,6 @@ function computerPlay() {
 }
 
 //slow response down setTimeout()???
-//Animation
-
 //we compare the choices use a switch statement or if statement
 //determine and declare winner
 //update the screen possible use innerText

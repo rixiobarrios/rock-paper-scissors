@@ -1,4 +1,4 @@
-![logo](https://user-images.githubusercontent.com/55994508/72009975-96e0a800-321c-11ea-8bf8-863cd8a4c9fd.png)
+<img src="https://user-images.githubusercontent.com/55994508/72009975-96e0a800-321c-11ea-8bf8-863cd8a4c9fd.png" alt="logo" style="display: block; margin: 0 auto" />
 
 # Project 1: Rock Paper Scissors Game
 
