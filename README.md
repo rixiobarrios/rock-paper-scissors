@@ -59,3 +59,12 @@ Fonts provided by [dafont.com](https://www.dafont.com/)
 Background vector created by [freepik.com](https://www.freepik.com/home)
 
 ## Thanks
+
+General Assembly Team:
+Esin Saribudak, Jennifer Meade
+
+General Assembly Students:
+Sage Kearny
+
+Freecodecamp Volunteer
+Robert Groves

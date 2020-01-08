@@ -10,22 +10,32 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1 class="h1">Rock Paper Scissors</h1>
+        <h1>ROCK PAPER SCISSORS</h1>
         <div class="score-container">
-            <h3>Player</h3>
+            <h3>YOU</h3>
             <div id="player-score">0</div>
-            <h3>Computer</h3>
+            <h3>COMPUTER</h3>
             <div id="computer-score">0</div>
+            <h2 id="announcement">ANNOUNCEMENT!</h2>
         </div>
         <div class="image-container">
-            <img src="/img/rock_left.png" alt="" />
-            <img src="/img/rock.png" alt="" />
+            <img id="player-hand" src="/img/rock_left.png" alt="" />
+            <img id="computer-hand" src="/img/rock.png" alt="" />
         </div>
         <div class="buttons-container">
             <button id="rock">Rock</button>
             <button id="paper">Paper</button>
             <button id="scissors">Scissors</button>
-            <h2 class="h2">Make your choice</h2>
+            <!-- <button id="rock">
+                <img src="/img/rock_left.png" alt="rock" />
+            </button>
+            <button id="paper">
+                <img src="/img/paper_left.png" alt="paper" />
+            </button>
+            <button id="scissors">
+                <img src="/img/scissors_left.png" alt="scissors" />
+            </button> -->
+            <h3>CHOSE WISELY</h3>
         </div>
         <script src="script.js"></script>
     </body>
