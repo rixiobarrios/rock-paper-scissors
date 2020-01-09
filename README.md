@@ -91,7 +91,7 @@ General Assembly Team:
 Esin Saribudak, Jennifer Meade, Jared Morgan
 
 General Assembly Students:
-Sage Kearny, Suzan Adams
+Sage Kearny, Suzan Adams, Myshawne Stallings, Qusai Fares
 
 Freecodecamp Volunteer:
 Robert Groves

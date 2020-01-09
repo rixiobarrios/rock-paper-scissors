@@ -1,52 +1,149 @@
 /* PROJECT 1 */
-/* w3schools */
-/* MDN */
-body {
-    background-image: url('/img/vector.jpg');
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
-    background-attachment: fixed;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 /* stack overflow */
 @font-face {
     font-family: 'komikax';
     src: url('/font/KOMIKAX_.ttf');
 }
 
+.intro {
+    background: #fcc02e;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+.intro h1 {
+    font-size: 12vh;
+    -webkit-text-stroke-color: black;
+}
+/* stack overflow */
+.intro button {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid black;
+    font-family: 'komikax';
+    font-size: 8vh;
+    color: white;
+    background: #e53935;
+    cursor: pointer;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    left: -300px;
+    transition: transform 0.25s ease-in;
+}
+
+.intro button:hover {
+    transform: translateY(-1rem);
+}
+
+.intro button:focus {
+    outline: none;
+}
+/* w3schools */
+/* MDN */
+body {
+    background-image: url('/img/vector.jpg');
+    background-color: white;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: top;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'komikax';
-    font-size: 15vh;
+    font-size: 12vh;
     color: white;
     text-align: center;
+    padding: 20px;
     /* css-tricks */
     -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 700px) {
+    .score-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.score-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -50px;
+}
+
+.points {
+    display: flex;
+    flex-direction: row;
+}
+
+.points h3 {
+    margin-left: 35px;
+}
+
+#you {
+    font-family: 'komikax';
+    font-size: 8vh;
+    color: #fcc02e;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#draws {
+    font-family: 'komikax';
+    font-size: 8vh;
+    color: #fcc02e;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#computer {
+    font-family: 'komikax';
+    font-size: 8vh;
+    color: #fcc02e;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
 #player-score {
     font-family: 'komikax';
     color: #e53935;
-    font-size: 10vh;
-    -webkit-text-stroke-width: 3px;
+    font-size: 8vh;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
 #computer-score {
     font-family: 'komikax';
     color: #e53935;
-    font-size: 10vh;
-    -webkit-text-stroke-width: 3px;
+    font-size: 8vh;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
 #draw-score {
     font-family: 'komikax';
     color: #e53935;
-    font-size: 10vh;
-    -webkit-text-stroke-width: 3px;
+    font-size: 8vh;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
@@ -55,41 +152,36 @@ h2 {
     font-size: 10vh;
     color: #e53935;
     text-align: center;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-#you {
-    font-family: 'komikax';
-    font-size: 5vh;
-    color: #fcc02e;
-    font-size: 10vh;
+    justify-content: center;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
-#draws {
-    font-family: 'komikax';
-    font-size: 5vh;
-    color: #fcc02e;
-    font-size: 10vh;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-#computer {
-    font-family: 'komikax';
-    font-size: 5vh;
-    color: #fcc02e;
-    font-size: 10vh;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+/* #player-hand {
+    padding: 10px 10px 10px 10px;
+}
+
+#computer-hand {
+    padding: 10px 10px 10px 10px;
+} */
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #choose {
     font-family: 'komikax';
-    font-size: 5vh;
-    color: #fcc02e;
     font-size: 10vh;
+    text-align: center;
+    color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
@@ -106,6 +198,7 @@ h2 {
     cursor: pointer;
     transition: transform 0.25s ease-in;
     font-size: 0;
+    left: 90px;
 }
 
 #rock:hover {
@@ -151,6 +244,7 @@ h2 {
     transition: transform 0.25s ease-in;
     font-size: 0;
     text-decoration: none;
+    left: -90px;
 }
 
 #scissors:hover {
@@ -171,4 +265,124 @@ h2 {
     100% {
         transform: translateY(-50px);
     }
+}
+
+.win {
+    background: #fcc02e;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.win h1 {
+    font-size: 12vh;
+}
+
+.win button {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid black;
+    font-family: 'komikax';
+    font-size: 5vh;
+    color: white;
+    background: #e53935;
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    left: -300px;
+    transition: transform 0.25s ease-in;
+}
+
+.win button:hover {
+    transform: translateY(-1rem);
+}
+
+.win button:focus {
+    outline: none;
+}
+
+.lose {
+    background: #fcc02e;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.lose h1 {
+    font-size: 12vh;
+}
+
+.lose button {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid black;
+    font-family: 'komikax';
+    font-size: 5vh;
+    color: white;
+    background: #e53935;
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    left: -300px;
+    transition: transform 0.25s ease-in;
+}
+
+.lose button:hover {
+    transform: translateY(-1rem);
+}
+
+.lose button:focus {
+    outline: none;
+}
+
+.draw {
+    background: #fcc02e;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.draw h1 {
+    font-size: 12vh;
+}
+
+.draw button {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid black;
+    font-family: 'komikax';
+    font-size: 5vh;
+    color: white;
+    background: #e53935;
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    left: -300px;
+    transition: transform 0.25s ease-in;
+}
+
+.draw button:hover {
+    transform: translateY(-1rem);
+}
+
+.draw button:focus {
+    outline: none;
 }

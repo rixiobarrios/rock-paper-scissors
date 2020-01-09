@@ -1,7 +1,29 @@
 // PROJECT 1
 
 //start the game/button
-// let startGame()
+const playButton = document.querySelector('.intro button');
+const introScreen = document.querySelector('.intro');
+playButton.addEventListener('click', function() {
+    introScreen.style.display = 'none';
+});
+
+const winButton = document.querySelector('.win button');
+const winScreen = document.querySelector('.win');
+winButton.addEventListener('click', function() {
+    winScreen.style.display = 'none';
+});
+
+const loseButton = document.querySelector('.lose button');
+const loseScreen = document.querySelector('.lose');
+loseButton.addEventListener('click', function() {
+    loseScreen.style.display = 'none';
+});
+const drawButton = document.querySelector('.draw button');
+const drawScreen = document.querySelector('.draw');
+drawButton.addEventListener('click', function() {
+    drawScreen.style.display = 'none';
+});
+
 //score
 let playerScore = 0;
 let computerScore = 0;
@@ -57,13 +79,13 @@ function computerPlay() {
 //<---- MDN syntax ---->
 function calculateResults() {
     if (playerChoice === 'Rock' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'PLAYER WINS';
+        document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
     } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
-        document.getElementById('announcement').innerText = 'PLAYER WINS';
+        document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
     } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'PLAYER WINS';
+        document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
     } else if (playerChoice === 'Rock' && computerChoice === 'Paper') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
@@ -96,12 +118,12 @@ function calculateResults() {
 // clear score
 //<---- teamtreehouse ---->
 function displayResults() {
-    if (playerScore === 9) {
-        alert('YOU WON THE MATCH');
-    } else if (computerScore === 9) {
-        alert('GAME OVER');
-    } else if (drawScore === 9) {
-        alert("IT'S A TIE");
+    if (playerScore === 3) {
+        winScreen.style.display = 'flex';
+    } else if (computerScore === 3) {
+        loseScreen.style.display = 'flex';
+    } else if (drawScore === 3) {
+        drawScreen.style.display = 'flex';
     }
 }
 //change images
