@@ -12,23 +12,22 @@ let playerScore = 0;
 let computerScore = 0;
 let drawScore = 0;
 
-// function reloadPage() {
-//     location.reload();
-// }
-
+//reset scores
 function resetScores() {
     playerScore = 0;
     computerScore = 0;
     drawScore = 0;
-    document.getElementById('draw-score').innerText = drawScore;
     document.getElementById('player-score').innerText = playerScore;
     document.getElementById('computer-score').innerText = computerScore;
+    document.getElementById('draw-score').innerText = drawScore;
 }
 
 //screen transitions
 //<---- w3schools ---->
 const winButton = document.querySelector('.win button');
+console.log('i am win button', winButton);
 const winScreen = document.querySelector('.win');
+console.log('i am win screen', winScreen);
 winButton.addEventListener('click', function() {
     winScreen.style.display = 'none';
     resetScores();
@@ -36,12 +35,14 @@ winButton.addEventListener('click', function() {
 
 const loseButton = document.querySelector('.lose button');
 const loseScreen = document.querySelector('.lose');
+console.log('i am lose screen', loseScreen);
 loseButton.addEventListener('click', function() {
     loseScreen.style.display = 'none';
     resetScores();
 });
 const drawButton = document.querySelector('.draw button');
 const drawScreen = document.querySelector('.draw');
+console.log('i am draw screen', drawScreen);
 drawButton.addEventListener('click', function() {
     drawScreen.style.display = 'none';
     resetScores();
@@ -70,8 +71,8 @@ scissorsButton.addEventListener('click', handleClick);
 //add animation
 //<---- w3schools ---->
 function handleClick(event) {
-    playerHand.src = '/img/rock_left.png';
-    computerHand.src = '/img/rock.png';
+    playerHand.src = './img/rock_left.png';
+    computerHand.src = './img/rock.png';
     playerChoice = event.target.innerText;
     playerHand.classList.add('shake');
     computerHand.classList.add('shake');
@@ -137,19 +138,18 @@ function calculateResults() {
 }
 
 //stop score
-//???????????
-//function reloadPage() {
-//location.reload();
-//}
 //declare results
 //<---- teamtreehouse ---->
 function displayResults() {
     if (playerScore === 3) {
         winScreen.style.display = 'flex';
+        console.log('I am the win screen');
     } else if (computerScore === 3) {
         loseScreen.style.display = 'flex';
+        console.log('I am the lose screen');
     } else if (drawScore === 3) {
         drawScreen.style.display = 'flex';
+        console.log('I am the draw screen');
     }
 }
 // clear score
@@ -157,20 +157,20 @@ function displayResults() {
 //<---- MDN ---->
 function replacePlayerImage() {
     if (playerChoice === 'Rock') {
-        playerHand.src = '/img/rock_left.png';
+        playerHand.src = './img/rock_left.png';
     } else if (playerChoice === 'Paper') {
-        playerHand.src = '/img/paper_left.png';
+        playerHand.src = './img/paper_left.png';
     } else if (playerChoice === 'Scissors') {
-        playerHand.src = '/img/scissors_left.png';
+        playerHand.src = './img/scissors_left.png';
     }
 }
 
 function replaceComputerImage() {
     if (computerChoice === 'Rock') {
-        computerHand.src = '/img/rock.png';
+        computerHand.src = './img/rock.png';
     } else if (computerChoice === 'Paper') {
-        computerHand.src = '/img/paper.png';
+        computerHand.src = './img/paper.png';
     } else if (computerChoice === 'Scissors') {
-        computerHand.src = '/img/scissors.png';
+        computerHand.src = './img/scissors.png';
     }
 }

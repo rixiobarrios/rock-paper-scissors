@@ -30,7 +30,7 @@ Anyone between the ages of _3 and beyond_.
 
 ## History
 
-The earliest form of Rock Paper Scissors was created in Japan and is called Janken. This is a variation of the Chinese games introduced in the 17th century. Janken uses the Rock, Paper and Scissors signs. It is the game that the modern version of Rock Paper Scissors derives from directly. Hand-games using gestures to represent the three conflicting elements of rock, paper and scissors have been most common since the modern version of the game was created in the late 19th Century. This was between the Edo and Meiji periods.
+The earliest form of _Rock Paper Scissors_ was created in Japan and is called _Janken_. This is a variation of the Chinese games introduced in the 17th century. _Janken_ uses the Rock, Paper and Scissors signs. It is the game that the modern version of _Rock Paper Scissors_ derives from directly. Hand-games using gestures to represent the three conflicting elements of rock, paper and scissors have been most common since the modern version of the game was created in the late 19th Century. This was between the Edo and Meiji periods.
 
 ## The Game
 
@@ -138,7 +138,7 @@ General Assembly Team:
 Esin Saribudak, Jennifer Meade, Jared Morgan
 
 General Assembly Students:
-Sage Kearny, Suzan Adams, Myshawne Stallings, Qusai Fares, Chris Albanese
+Sage Kearny, Suzan Adams, Myshawne Stallings, Qusai Fares
 
 Freecodecamp Volunteer:
 Robert Groves
