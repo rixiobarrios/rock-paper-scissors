@@ -1,4 +1,4 @@
-// PROJECT 1
+// PROJECT 1 // ROCK PAPER SCISSORS GAME
 
 //start the game/button
 const playButton = document.querySelector('.intro button');
@@ -7,27 +7,47 @@ playButton.addEventListener('click', function() {
     introScreen.style.display = 'none';
 });
 
+//score
+let playerScore = 0;
+let computerScore = 0;
+let drawScore = 0;
+
+// function reloadPage() {
+//     location.reload();
+// }
+
+function resetScores() {
+    playerScore = 0;
+    computerScore = 0;
+    drawScore = 0;
+    document.getElementById('draw-score').innerText = drawScore;
+    document.getElementById('player-score').innerText = playerScore;
+    document.getElementById('computer-score').innerText = computerScore;
+}
+
+//screen transitions
+//<---- w3schools ---->
 const winButton = document.querySelector('.win button');
 const winScreen = document.querySelector('.win');
 winButton.addEventListener('click', function() {
     winScreen.style.display = 'none';
+    resetScores();
 });
 
 const loseButton = document.querySelector('.lose button');
 const loseScreen = document.querySelector('.lose');
 loseButton.addEventListener('click', function() {
     loseScreen.style.display = 'none';
+    resetScores();
 });
 const drawButton = document.querySelector('.draw button');
 const drawScreen = document.querySelector('.draw');
 drawButton.addEventListener('click', function() {
     drawScreen.style.display = 'none';
+    resetScores();
 });
 
-//score
-let playerScore = 0;
-let computerScore = 0;
-let drawScore = 0;
+//player objects
 const playerHand = document.querySelector('#player-hand');
 const computerHand = document.querySelector('#computer-hand');
 
@@ -45,7 +65,9 @@ paperButton.addEventListener('click', handleClick);
 
 const scissorsButton = document.getElementById('scissors');
 scissorsButton.addEventListener('click', handleClick);
-//slow response down setTimeout()
+
+//slowdown response
+//add animation
 //<---- w3schools ---->
 function handleClick(event) {
     playerHand.src = '/img/rock_left.png';
@@ -59,22 +81,21 @@ function handleClick(event) {
         computerPlay();
     }, 1500);
 }
+
 //create an array with the three elements to chose from
-//generate a random simulated computer response using math.random
+//generate a random simulated computer response
 //store computers choice in a variable
 //<---- geeksforgeeks syntax ---->
 choices = ['Rock', 'Paper', 'Scissors'];
 let computerChoice;
 function computerPlay() {
     computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    console.log(computerChoice);
     calculateResults();
 }
 
-//slow response down setTimeout()???
-//we compare the choices use a switch statement or if statement
+//we compare the choices
 //determine and declare winner
-//update the screen possible use innerText
+//update screen message
 //<---- w3schools syntax ---->
 //<---- MDN syntax ---->
 function calculateResults() {
@@ -106,6 +127,7 @@ function calculateResults() {
         document.getElementById('announcement').innerText = "IT'S A DRAW";
         drawScore += 1;
     }
+    //image representation for user and computer
     replacePlayerImage();
     replaceComputerImage();
     document.getElementById('draw-score').innerText = drawScore;
@@ -115,7 +137,11 @@ function calculateResults() {
 }
 
 //stop score
-// clear score
+//???????????
+//function reloadPage() {
+//location.reload();
+//}
+//declare results
 //<---- teamtreehouse ---->
 function displayResults() {
     if (playerScore === 3) {
@@ -126,8 +152,9 @@ function displayResults() {
         drawScreen.style.display = 'flex';
     }
 }
-//change images
-//<----
+// clear score
+//change images per turn
+//<---- MDN ---->
 function replacePlayerImage() {
     if (playerChoice === 'Rock') {
         playerHand.src = '/img/rock_left.png';

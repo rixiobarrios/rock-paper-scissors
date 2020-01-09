@@ -1,8 +1,16 @@
-/* PROJECT 1 */
+/* PROJECT 1 // ROCK PAPER SCISSORS GAME */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* <---- css-tricks ----> */
+html {
+    background: url(/img/vector.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* stack overflow */
@@ -54,7 +62,7 @@
 }
 /* w3schools */
 /* MDN */
-body {
+/* body {
     background-image: url('/img/vector.jpg');
     background-color: white;
     background-size: cover;
@@ -63,7 +71,7 @@ body {
     background-attachment: scroll;
     display: flex;
     flex-direction: column;
-}
+} */
 
 h1 {
     font-family: 'komikax';
@@ -162,14 +170,6 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
 }
-
-/* #player-hand {
-    padding: 10px 10px 10px 10px;
-}
-
-#computer-hand {
-    padding: 10px 10px 10px 10px;
-} */
 
 .buttons-container {
     display: flex;

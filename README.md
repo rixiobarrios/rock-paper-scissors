@@ -2,25 +2,31 @@
 
 # Project 1: Rock Paper Scissors Game
 
-This is a game project made in HTML, CSS and Javascript. Its a very simple game of Rock, paper scissors. I made this game as part of my first project assignment for my coding bootcamp school (General Assembly).
+## Concept
+
+Its a very simple game of _Rock, paper scissors_. I made this game as part of my first project assignment for my coding bootcamp school (General Assembly).
+
+## Link to the Game
+
+[Game of Rock Paper Scissors](https://rixiobarrios.github.io/rock-paper-scissors)
 
 Here is a GIF of the game in action:
 ![Example Image](/img/example.gif)
 
 ## Target Audience
 
-Anyone between the ages of 3 and beyond.
+Anyone between the ages of _3 and beyond_.
 
 ## Why I chose this game
 
--   No Age Requirement to Play
--   No need to lift weights and train in order to compete at a professional level
--   No Physical Barriers to Play
--   No one is naturally better at the sport then anyone else
--   There is no setup required to start the game
--   No cleanup after the game is over
+-   _No Age Requirement_ to Play
+-   _No need for training_ to compete at a professional level
+-   _No physical barriers_ to Play
+-   _No_ one is naturally better at the sport then anyone else
+-   There is _no_ setup required to start the game
+-   _No cleanup_ after the game is over
 -   Allows for quick decision making
--   There is No Age or Gender Bias
+-   There is _no age or gender bias_
 
 ## History
 
@@ -35,6 +41,14 @@ Rock Paper Scissors is a zero sum game that is usually played by two people usin
 Chose one of three options to play against the computer.
 Once you have chosen, the computer would also make a choice.
 A win, a lose or a draw message would be posted for each party.
+
+## Hardware Platform
+
+This game is web-based and can be played on desktop and laptop computers. Mobile option fot phones and tablets need optimization.
+
+## Competition Mode
+
+Single player
 
 ## Rules
 
@@ -52,12 +66,45 @@ Thе fіrѕt strategy іѕ thе соuntеrtасtіс: Lеt’ѕ say уоu рlа�
 
 The ѕесоnd ѕtrаtеgу іѕ to mіrrоr: If you juѕt won, рlау what уоur орроnеnt juѕt рlауеd, bесаuѕе hе оr ѕhе wіll thіnk that уоu аrе gоіng to рlау thе same gеѕturе аgаіn.
 
+## The Making of the Game
+
+## Wireframes
+
+## Technical Specifications
+
+## Code Sample
+
+```javascript
+function fancyAlert(arg) {
+    if (arg) {
+        $.facebox({ div: '#foo' });
+    }
+}
+```
+
 ## Features
 
--   Scoreboard tops after 9 wins
+Rock Paper Scissors is currently at the Silver Level features functionality.
+
+-   Scoreboard tops after _3 wins_
 -   Try again and play again buttons to restart the game
 -   Three buttons pick the three options
 -   2 images change to reflect choices
+
+## User Story
+
+## Technologies used
+
+-   [HTML](https://www.w3.org/TR/html52/)
+-   [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+-   [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## Installation instructions/Getting Started
+
+## Contribution Guidelines
+
+Submit contribution through my repository for approval
+[Game Repo](https://github.com/rixiobarrios/rock-paper-scissors)
 
 ## Bugs
 
@@ -73,11 +120,11 @@ None yet
 
 ## Attributions
 
-Rules, instructions and general information for this game were taken from The World Rock Paper Scissors Association's website [wrpsa](https://www.wrpsa.com)
+Wireframes were made using [wireframe.cc](https://wireframe.cc)
 
 Personal branding logo for this file was created using [freelogodesign.org](https://www.freelogodesign.org)
 
-Wireframes were made using [wireframe.cc](https://wireframe.cc)
+Rules, instructions and general information for this game were taken from The World Rock Paper Scissors Association's website [wrpsa](https://www.wrpsa.com)
 
 Graphics sourced for hands from Esquire article [esquireme.com](https://www.esquireme.com/content/20945-how-to-win-at-rock-paper-scissors)
 
@@ -85,13 +132,13 @@ Fonts provided by [dafont.com](https://www.dafont.com)
 
 Background vector created by [freepik.com](https://www.freepik.com/home)
 
-## Thanks
+## Thanks/Acknowledgments
 
 General Assembly Team:
 Esin Saribudak, Jennifer Meade, Jared Morgan
 
 General Assembly Students:
-Sage Kearny, Suzan Adams, Myshawne Stallings, Qusai Fares
+Sage Kearny, Suzan Adams, Myshawne Stallings, Qusai Fares, Chris Albanese
 
 Freecodecamp Volunteer:
 Robert Groves
