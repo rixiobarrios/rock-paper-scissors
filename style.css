@@ -12,8 +12,10 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    letter-spacing: 2px;
 }
 /* stack overflow */
+/* fonts file */
 @font-face {
     font-family: 'komikax';
     src: url('./font/KOMIKAX_.ttf');
@@ -33,23 +35,23 @@ html {
 }
 /* intro tittle (Rock Paper Scissors) */
 .intro h1 {
-    font-size: 12vh;
+    font-size: 10vh;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 /* stack overflow */
 .intro button {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 5px solid black;
     font-family: 'komikax';
-    font-size: 8vh;
+    font-size: 10vh;
     color: white;
     background: #e53935;
     cursor: pointer;
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    left: -300px;
     transition: transform 0.25s ease-in;
 }
 
@@ -63,12 +65,12 @@ html {
 /* game tittle (Rock Paper Scissors) */
 h1 {
     font-family: 'komikax';
-    font-size: 12vh;
+    font-size: 10vh;
     color: white;
     text-align: center;
     padding: 20px;
     /* css-tricks */
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 /* scores */
@@ -147,7 +149,7 @@ h1 {
 /* interchangeable announcements (Ready to Play?) */
 h2 {
     font-family: 'komikax';
-    font-size: 10vh;
+    font-size: 8vh;
     color: #e53935;
     text-align: center;
     justify-content: center;
@@ -266,31 +268,31 @@ h2 {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transition: opacity 0.5s ease;
     z-index: 2;
+    top: 0;
 }
 
 .win h1 {
-    font-size: 12vh;
+    font-size: 10vh;
 }
 
 .win button {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 5px solid black;
     font-family: 'komikax';
-    font-size: 5vh;
+    font-size: 10vh;
     color: white;
     background: #e53935;
     cursor: pointer;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    left: -300px;
     transition: transform 0.25s ease-in;
 }
 
@@ -312,25 +314,26 @@ h2 {
     align-items: center;
     justify-content: space-around;
     transition: opacity 0.5s ease;
+    z-index: 2;
+    top: 0;
 }
 
 .lose h1 {
-    font-size: 12vh;
+    font-size: 10vh;
 }
 
 .lose button {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 5px solid black;
     font-family: 'komikax';
-    font-size: 5vh;
+    font-size: 10vh;
     color: white;
     background: #e53935;
     cursor: pointer;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    left: -300px;
     transition: transform 0.25s ease-in;
 }
 
@@ -352,25 +355,26 @@ h2 {
     align-items: center;
     justify-content: space-around;
     transition: opacity 0.5s ease;
+    z-index: 2;
+    top: 0;
 }
 
 .draw h1 {
-    font-size: 12vh;
+    font-size: 10vh;
 }
 
 .draw button {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    border: 6px solid black;
+    border: 5px solid black;
     font-family: 'komikax';
-    font-size: 5vh;
+    font-size: 10vh;
     color: white;
     background: #e53935;
     cursor: pointer;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    left: -300px;
     transition: transform 0.25s ease-in;
 }
 

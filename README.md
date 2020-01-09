@@ -4,7 +4,7 @@
 
 ## Concept
 
-Its a very simple game of _Rock, paper scissors_. I made this game as part of my first project assignment for my coding bootcamp school (General Assembly).
+Its a very simple game of _Rock, paper scissors_. I made this game as part of my first project assignment for **General Assembly** coding bootcamp school.
 
 ## Link to the Game
 
@@ -19,22 +19,22 @@ Anyone between the ages of _3 and beyond_.
 
 ## Why I chose this game
 
--   _No Age Requirement_ to Play
--   _No need for training_ to compete at a professional level
--   _No physical barriers_ to Play
--   _No_ one is naturally better at the sport then anyone else
--   There is _no_ setup required to start the game
--   _No cleanup_ after the game is over
+-   No Age Requirement to Play
+-   No need for training to compete at a professional level
+-   No physical barriers to Play
+-   No one is naturally better at the sport then anyone else
+-   There is no setup required to start the game
+-   No cleanup after the game is over
 -   Allows for quick decision making
--   There is _no age or gender bias_
+-   There is no age or gender bias
 
 ## History
 
-The earliest form of _Rock Paper Scissors_ was created in Japan and is called _Janken_. This is a variation of the Chinese games introduced in the 17th century. _Janken_ uses the Rock, Paper and Scissors signs. It is the game that the modern version of _Rock Paper Scissors_ derives from directly. Hand-games using gestures to represent the three conflicting elements of rock, paper and scissors have been most common since the modern version of the game was created in the late 19th Century. This was between the Edo and Meiji periods.
+The earliest form of **Rock Paper Scissors** was created in Japan and is called **Janken**. This is a variation of the Chinese games introduced in the 17th century. **Janken** uses the Rock, Paper and Scissors signs. It is the game that the modern version of **Rock Paper Scissors** derives from directly. Hand-games using gestures to represent the three conflicting elements of rock, paper and scissors have been most common since the modern version of the game was created in the late 19th Century. This was between the Edo and Meiji periods.
 
 ## The Game
 
-Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
+**Rock Paper Scissors** is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
 
 ## Instructions
 
@@ -44,7 +44,7 @@ A win, a lose or a draw message would be posted for each party.
 
 ## Hardware Platform
 
-This game is web-based and can be played on desktop and laptop computers. Mobile option fot phones and tablets need optimization.
+This game is _web-based_ and can be played on desktop and laptop computers. _Mobile_ option for phones and tablets need optimization.
 
 ## Competition Mode
 
@@ -62,9 +62,9 @@ Single player
 
 ## Strategy
 
-Thе fіrѕt strategy іѕ thе соuntеrtасtіс: Lеt’ѕ say уоu рlауеd scissors аnd your opponent рlауеd rосk. Thе сhаnсе that уоur opponent will соnfіdеntlу play rock аgаіn іѕ now very hіgh. What thаt means tо уоu: аntісіраtе thаt аnd рlау paper. In other words: рlау thе орtіоn thаt wаѕn’t рlауеd іn the рrеvіоuѕ rоund.
+Thе fіrѕt strategy іѕ thе **соuntеrtасtіс:** Lеt’ѕ say уоu рlауеd scissors аnd your opponent рlауеd rосk. Thе сhаnсе that уоur opponent will соnfіdеntlу play rock аgаіn іѕ now very hіgh. What thаt means tо уоu: аntісіраtе thаt аnd рlау paper. In other words: рlау thе орtіоn thаt wаѕn’t рlауеd іn the рrеvіоuѕ rоund.
 
-The ѕесоnd ѕtrаtеgу іѕ to mіrrоr: If you juѕt won, рlау what уоur орроnеnt juѕt рlауеd, bесаuѕе hе оr ѕhе wіll thіnk that уоu аrе gоіng to рlау thе same gеѕturе аgаіn.
+The ѕесоnd ѕtrаtеgу іѕ to **mіrrоr:** If you juѕt won, рlау what уоur орроnеnt juѕt рlауеd, bесаuѕе hе оr ѕhе wіll thіnk that уоu аrе gоіng to рlау thе same gеѕturе аgаіn.
 
 ## The Making of the Game
 
@@ -84,12 +84,12 @@ function fancyAlert(arg) {
 
 ## Features
 
-Rock Paper Scissors is currently at the Silver Level features functionality.
+**Rock Paper Scissors** is currently at the **Silver** Level features functionality.
 
--   Scoreboard tops after _3 wins_
+-   3 buttons pick the 3 options
+-   2 images\*\* reflect choices made by both player and computer
+-   Scoreboard tops after 3 wins
 -   Try again and play again buttons to restart the game
--   Three buttons pick the three options
--   2 images change to reflect choices
 
 ## User Story
 
@@ -113,8 +113,8 @@ None yet
 ## Future additions
 
 -   Animations
--   Mobile phone layout
--   Available version in Spanish
+-   **Optimized** mobile phone layout
+-   Available version in **Spanish**
 -   Unlockable/achievements graphics
 -   New UI for chosen game object.
 
@@ -124,21 +124,27 @@ Wireframes were made using [wireframe.cc](https://wireframe.cc)
 
 Personal branding logo for this file was created using [freelogodesign.org](https://www.freelogodesign.org)
 
-Rules, instructions and general information for this game were taken from The World Rock Paper Scissors Association's website [wrpsa](https://www.wrpsa.com)
+Rules, instructions and general information for this game were taken from **The World Rock Paper Scissors Association**'s website [wrpsa](https://www.wrpsa.com)
 
-Graphics sourced for hands from Esquire article [esquireme.com](https://www.esquireme.com/content/20945-how-to-win-at-rock-paper-scissors)
+Graphics for hands borrowed from **Esquire** article **How to Win at Rock Paper Scissors** [esquireme.com](https://www.esquireme.com/content/20945-how-to-win-at-rock-paper-scissors)
+
+Images edited using [pixlr.com](https://pixlr.com/)
 
 Fonts provided by [dafont.com](https://www.dafont.com)
 
 Background vector created by [freepik.com](https://www.freepik.com/home)
 
-## Thanks/Acknowledgments
+## Special Thanks
 
-General Assembly Team:
+**General Assembly Team:**
 Esin Saribudak, Jennifer Meade, Jared Morgan
 
-General Assembly Students:
+**General Assembly Students:**
 Sage Kearny, Suzan Adams, Myshawne Stallings, Qusai Fares
 
-Freecodecamp Volunteer:
+**Freecodecamp Volunteers:**
 Robert Groves
+
+## Acknowledgement
+
+w3chools.com, stackoverflow.com, css-tricks.com, github.com, codepen.io, freecodecamp.org, eloquentjavascript.net, teamtreehouse.com, developer.mozilla.org, medium.com, learnlayout.com, mathjs.org, geeksforgeeks.org, flaviocopes.com, tutorialspoint.com, guru99.com, javascript.info, javatpoint.com, bitdegree.org, java2s.com, mysamplecode.com, edureka.co,
