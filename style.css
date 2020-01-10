@@ -52,7 +52,9 @@ html {
     cursor: pointer;
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    transition: transform 0.25s ease-in;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .intro button:hover {
@@ -155,7 +157,11 @@ h2 {
     justify-content: center;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    animation-name: pulse;
+    animation-duration: 0.5s;
+    animation-iteration-count: none;
 }
+
 /* images on stage */
 .image-container {
     display: flex;
@@ -181,17 +187,17 @@ h2 {
 .buttons-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
 }
-/* choose wisely message */
-#choose {
-    font-family: 'komikax';
-    font-size: 10vh;
-    text-align: center;
-    color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+
+@media (max-width: 1200px) {
+    .buttons-container {
+        display: flex;
+        justify-content: center;
+    }
 }
+
 /* choice images */
 /* stack overflow */
 #rock {
@@ -206,7 +212,6 @@ h2 {
     cursor: pointer;
     transition: transform 0.25s ease-in;
     font-size: 0;
-    left: 90px;
 }
 
 #rock:hover {
@@ -252,7 +257,6 @@ h2 {
     transition: transform 0.25s ease-in;
     font-size: 0;
     text-decoration: none;
-    left: -90px;
 }
 
 #scissors:hover {
@@ -261,6 +265,15 @@ h2 {
 
 #scissors:focus {
     outline: none;
+}
+/* choose wisely message */
+#choose {
+    font-family: 'komikax';
+    font-size: 10vh;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 /* screens */
 .win {
@@ -293,7 +306,9 @@ h2 {
     cursor: pointer;
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    transition: transform 0.25s ease-in;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .win button:hover {
@@ -334,7 +349,9 @@ h2 {
     cursor: pointer;
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    transition: transform 0.25s ease-in;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .lose button:hover {
@@ -375,7 +392,9 @@ h2 {
     cursor: pointer;
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
-    transition: transform 0.25s ease-in;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .draw button:hover {
@@ -384,4 +403,31 @@ h2 {
 
 .draw button:focus {
     outline: none;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.75);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    font-family: 'komikax';
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
 }

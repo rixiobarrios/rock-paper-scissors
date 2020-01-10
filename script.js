@@ -25,32 +25,45 @@ function resetScores() {
 //screen transitions
 //<---- w3schools ---->
 const winButton = document.querySelector('.win button');
-console.log('i am win button', winButton);
 const winScreen = document.querySelector('.win');
-console.log('i am win screen', winScreen);
 winButton.addEventListener('click', function() {
     winScreen.style.display = 'none';
     resetScores();
+    resetHands();
+    resetMessage();
 });
 
 const loseButton = document.querySelector('.lose button');
 const loseScreen = document.querySelector('.lose');
-console.log('i am lose screen', loseScreen);
 loseButton.addEventListener('click', function() {
     loseScreen.style.display = 'none';
     resetScores();
+    resetHands();
+    resetMessage();
 });
 const drawButton = document.querySelector('.draw button');
 const drawScreen = document.querySelector('.draw');
-console.log('i am draw screen', drawScreen);
 drawButton.addEventListener('click', function() {
     drawScreen.style.display = 'none';
     resetScores();
+    resetHands();
+    resetMessage();
 });
 
 //player objects
 const playerHand = document.querySelector('#player-hand');
 const computerHand = document.querySelector('#computer-hand');
+
+//reset hands
+function resetHands() {
+    playerHand.src = './img/rock_left.png';
+    computerHand.src = './img/rock.png';
+}
+
+//reset announcement
+function resetMessage() {
+    document.getElementById('announcement').innerText = 'READY TO PLAY ?';
+}
 
 //player choses from three options/buttons
 //add event listeners
@@ -128,6 +141,26 @@ function calculateResults() {
         document.getElementById('announcement').innerText = "IT'S A DRAW";
         drawScore += 1;
     }
+    // announcement animation <-------  to do!!!!
+    // function handleClick(event) {
+    //     playerHand.src = './img/rock_left.png';
+    //     computerHand.src = './img/rock.png';
+    //     document.getElementById('announcement').innerText;
+    //     playerChoice = event.target.innerText;
+    //     playerHand.classList.add('shake');
+    //     computerHand.classList.add('shake');
+    //     setTimeout(function() {
+    //         playerHand.classList.remove('shake');
+    //         computerHand.classList.remove('shake');
+    //         computerPlay();
+    //     }, 1500);
+    // }
+    // new idea. turn animation on when message comes on
+    // function jumpMessage() {
+    //     document.getElementById('announcement').innerText;
+    //     drawScreen.style.animation - iteration - count='none';
+    // }
+
     //image representation for user and computer
     replacePlayerImage();
     replaceComputerImage();
@@ -143,13 +176,10 @@ function calculateResults() {
 function displayResults() {
     if (playerScore === 3) {
         winScreen.style.display = 'flex';
-        console.log('I am the win screen');
     } else if (computerScore === 3) {
         loseScreen.style.display = 'flex';
-        console.log('I am the lose screen');
     } else if (drawScore === 3) {
         drawScreen.style.display = 'flex';
-        console.log('I am the draw screen');
     }
 }
 // clear score
