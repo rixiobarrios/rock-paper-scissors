@@ -62,14 +62,14 @@ function resetHands() {
 
 //reset announcement
 function resetMessage() {
-    document.getElementById('announcement').innerText = 'READY TO PLAY ?';
+    document.getElementById('announcement').innerText = 'READY TO PLAY?';
 }
 
 //player choses from three options/buttons
 //add event listeners
 //tell the computer when to respond
 //<---- MDN syntax ---->
-let playerChoice;
+let playerChoice; //<--- what does this do?
 
 const rockButton = document.getElementById('rock');
 rockButton.addEventListener('click', handleClick);
@@ -86,7 +86,8 @@ scissorsButton.addEventListener('click', handleClick);
 function handleClick(event) {
     playerHand.src = './img/rock_left.png';
     computerHand.src = './img/rock.png';
-    playerChoice = event.target.innerText;
+    playerChoice = event.target.innerText; // <-- what does this do?
+    console.log(playerChoice);
     playerHand.classList.add('shake');
     computerHand.classList.add('shake');
     setTimeout(function() {
@@ -114,23 +115,23 @@ function computerPlay() {
 //<---- MDN syntax ---->
 function calculateResults() {
     if (playerChoice === 'Rock' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'YOU WIN!!!';
-        playerScore += 1;
+        document.getElementById('announcement').innerText = 'YOU LOSE';
+        ComputerScore += 1;
     } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
         document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
     } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
         document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
-    } else if (playerChoice === 'Rock' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'YOU LOSE';
-        computerScore += 1;
     } else if (playerChoice === 'Paper' && computerChoice === 'Scissors') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
         computerScore += 1;
     } else if (playerChoice === 'Scissors' && computerChoice === 'Rock') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
         computerScore += 1;
+    } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
+        document.getElementById('announcement').innerText = 'YOU WIN!!!';
+        playerScore += 1;
     } else if (playerChoice === 'Rock' && computerChoice === 'Rock') {
         document.getElementById('announcement').innerText = "IT'S A DRAW";
         drawScore += 1;

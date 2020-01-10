@@ -13,6 +13,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     letter-spacing: 2px;
+    text-align: center;
 }
 /* stack overflow */
 /* fonts file */
@@ -420,12 +421,15 @@ h2 {
     }
 }
 
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 10px;
+h6 {
     font-family: 'komikax';
-    align-items: flex-end;
+    font-size: 2vh;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
 }
 
 a {
