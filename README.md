@@ -167,7 +167,7 @@ Background vector created by [freepik.com](https://www.freepik.com/home)
 # Special Thanks
 
 **General Assembly Team:**
-Esin Saribudak, Jennifer Meade, Jared Morgan
+Esin Saribudak, Jennifer Meade, Jared Morgan, Tiffany Huddleston
 **General Assembly Students:**
 Sage Kearny, Suzan Adams, Myshawne Stallings, Qusai Fares, Mindy Marmol
 **Freecodecamp Volunteers:**
@@ -180,4 +180,4 @@ Secondly I would also like to thank my family and friends who helped me a lot in
 
 ## Others
 
-_w3chools.com, stackoverflow.com, css-tricks.com, github.com, codepen.io, freecodecamp.org,eloquentjavascript.net, teamtreehouse.com, developer.mozilla.org, medium.com, learnlayout.com, mathjs.org, geeksforgeeks.org, flaviocopes.com, tutorialspoint.com, guru99.com, javascript.info, javatpoint.com, bitdegree.org, java2s.com, mysamplecode.com, edureka.co, support.e2ma.net, hyperlinkcode.com, wikipedia.org, afiniti.com_
+`w3chools.com, stackoverflow.com, css-tricks.com, github.com, codepen.io, freecodecamp.org,eloquentjavascript.net, teamtreehouse.com, developer.mozilla.org, medium.com, learnlayout.com, mathjs.org, geeksforgeeks.org, flaviocopes.com, tutorialspoint.com, guru99.com, javascript.info, javatpoint.com, bitdegree.org, java2s.com, mysamplecode.com, edureka.co, support.e2ma.net, hyperlinkcode.com, wikipedia.org, afiniti.com`

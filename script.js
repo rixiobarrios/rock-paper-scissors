@@ -1,6 +1,6 @@
 // PROJECT 1 // ROCK PAPER SCISSORS GAME
 
-//start the game/button
+//start the game/button/intro screen
 const playButton = document.querySelector('.intro button');
 const introScreen = document.querySelector('.intro');
 playButton.addEventListener('click', function() {
@@ -67,9 +67,7 @@ function resetMessage() {
 
 //player choses from three options/buttons
 //add event listeners
-//tell the computer when to respond
 //<---- MDN syntax ---->
-let playerChoice; //<--- what does this do?
 
 const rockButton = document.getElementById('rock');
 rockButton.addEventListener('click', handleClick);
@@ -80,14 +78,15 @@ paperButton.addEventListener('click', handleClick);
 const scissorsButton = document.getElementById('scissors');
 scissorsButton.addEventListener('click', handleClick);
 
+//tell the computer when to respond
 //slowdown response
 //add animation
+let playerChoice;
 //<---- w3schools ---->
 function handleClick(event) {
     playerHand.src = './img/rock_left.png';
     computerHand.src = './img/rock.png';
-    playerChoice = event.target.innerText; // <-- what does this do?
-    console.log(playerChoice);
+    playerChoice = event.target.innerText;
     playerHand.classList.add('shake');
     computerHand.classList.add('shake');
     setTimeout(function() {
@@ -100,9 +99,10 @@ function handleClick(event) {
 //create an array with the three elements to chose from
 //generate a random simulated computer response
 //store computers choice in a variable
-//<---- geeksforgeeks syntax ---->
 choices = ['Rock', 'Paper', 'Scissors'];
+
 let computerChoice;
+//<---- geeksforgeeks syntax ---->
 function computerPlay() {
     computerChoice = choices[Math.floor(Math.random() * choices.length)];
     calculateResults();
@@ -116,7 +116,7 @@ function computerPlay() {
 function calculateResults() {
     if (playerChoice === 'Rock' && computerChoice === 'Paper') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
-        ComputerScore += 1;
+        computerScore += 1;
     } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
         document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
@@ -142,24 +142,11 @@ function calculateResults() {
         document.getElementById('announcement').innerText = "IT'S A DRAW";
         drawScore += 1;
     }
-    // announcement animation <-------  to do!!!!
-    // function handleClick(event) {
-    //     playerHand.src = './img/rock_left.png';
-    //     computerHand.src = './img/rock.png';
-    //     document.getElementById('announcement').innerText;
-    //     playerChoice = event.target.innerText;
-    //     playerHand.classList.add('shake');
-    //     computerHand.classList.add('shake');
-    //     setTimeout(function() {
-    //         playerHand.classList.remove('shake');
-    //         computerHand.classList.remove('shake');
-    //         computerPlay();
-    //     }, 1500);
-    // }
-    // new idea. turn animation on when message comes on
+
+    // announcement animation <-------  future feature/work in progress
     // function jumpMessage() {
-    //     document.getElementById('announcement').innerText;
-    //     drawScreen.style.animation - iteration - count='none';
+    //     const announcement = document.getElementById('announcement');
+    //     announcement.classList.add('shake');
     // }
 
     //image representation for user and computer
