@@ -1,27 +1,75 @@
 /* PROJECT 1 // ROCK PAPER SCISSORS GAME */
+
+/* JM:
+Best Practices for organizing your CSS
+
+Always design for the smallest mobile device first!
+Those are your base styles on top of which you'll 
+layer in media queries to adjust for increasingly
+larger screen sizes.
+
+Although we infrequently use a single CSS file like
+this in modern web development (because of the 
+frameworks and tooling that we use), it's considered
+best practice to organize your CSS as follows:
+
+1. @imports/@font-face 
+2. :root selector
+3. * (universal) selector
+4. tag selectors (in alphabetical order)
+5. class selectors (in alphabetical order)
+6. attribute selectors (in alphabetical order)
+7. id selectors (avoid but alphabetize if used)
+8. media queries (in ascending width order)
+9. keyframe animations (in alphabetical order)
+
+In addition to organizing the selectors alphabetically,
+it's also best practice to organize the properties
+inside of each declaration in alphabetical order.
+
+Together these are real time-savers and will dramatically
+reduce the amount of CSS you need to write because you're
+working with the cascading nature of CSS instead of 
+against it.
+*/
+
 * {
     margin: 0;
-    padding: 0;
+    /* 
+  padding: 0 is the default
+  for ALL elements so this is 
+  unnecessary 
+  padding: 0; */
     box-sizing: border-box;
 }
 /* background */
 /* <---- css-tricks ----> */
 html {
     background: url('./img/vector.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    /* 
+  JM: Supported in all browsers since 2010
+  Do not prefix
+  https://caniuse.com/#feat=mdn-css_properties_background-size_contain_and_cover
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  */
     background-size: cover;
     letter-spacing: 2px;
     text-align: center;
 }
+
 /* stack overflow */
 /* fonts file */
+/* JM: Place all imports at the top of the file */
+/* There are also 15 places in your one CSS file that you set the font-family to komikax.  You can just set it ONE time on the body and all of the elements on the page will inherit from it.  You can always override it in a specific element if needed. */
 @font-face {
     font-family: 'komikax';
     src: url('./font/KOMIKAX_.ttf');
 }
 /* intro screen */
+/* Learn how to use variables in CSS: https://www.w3schools.com/css/css3_variables.asp.
+It'll be super helpful for you to not have to remember a whole bunch of obscure color hexcodes.  It'll also make it much easier to test out different color choices! */
 .intro {
     background: #fcc02e;
     width: 100vw;

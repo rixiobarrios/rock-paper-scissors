@@ -17,6 +17,7 @@ function resetScores() {
     playerScore = 0;
     computerScore = 0;
     drawScore = 0;
+    // You use these in multiple places so help yourself out by put them in variables at the top  of the page
     document.getElementById('player-score').innerText = playerScore;
     document.getElementById('computer-score').innerText = computerScore;
     document.getElementById('draw-score').innerText = drawScore;
@@ -114,33 +115,37 @@ function computerPlay() {
 //<---- w3schools syntax ---->
 //<---- MDN syntax ---->
 function calculateResults() {
-    if (playerChoice === 'Rock' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'YOU LOSE';
-        computerScore += 1;
-    } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
-        document.getElementById('announcement').innerText = 'YOU WIN!!!';
-        playerScore += 1;
-    } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = 'YOU WIN!!!';
-        playerScore += 1;
-    } else if (playerChoice === 'Paper' && computerChoice === 'Scissors') {
-        document.getElementById('announcement').innerText = 'YOU LOSE';
-        computerScore += 1;
-    } else if (playerChoice === 'Scissors' && computerChoice === 'Rock') {
-        document.getElementById('announcement').innerText = 'YOU LOSE';
-        computerScore += 1;
-    } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
-        document.getElementById('announcement').innerText = 'YOU WIN!!!';
-        playerScore += 1;
-    } else if (playerChoice === 'Rock' && computerChoice === 'Rock') {
-        document.getElementById('announcement').innerText = "IT'S A DRAW";
-        drawScore += 1;
-    } else if (playerChoice === 'Paper' && computerChoice === 'Paper') {
-        document.getElementById('announcement').innerText = "IT'S A DRAW";
-        drawScore += 1;
-    } else if (playerChoice === 'Scissors' && computerChoice === 'Scissors') {
-        document.getElementById('announcement').innerText = "IT'S A DRAW";
-        drawScore += 1;
+    // Great job getting this to work!  Since this is the largest and most complex of your functions, it would be a great candidate to refactor.  One way to streamline it could be:
+
+    // Store these so you only have to type them once
+    const announcement = document.getElementById('announcement');
+    const drawScoreElement = document.getElementById('draw-score');
+    const playerScoreElement = document.getElementById('player-score');
+    const computerScoreElement = document.getElementById('computer-score');
+
+    // If both the playerChoice and the computerChoice are the same (it doesn't matter what they are just that they are the equivalent in value)
+    if (playerChoice === computerChoice) {
+        // Update the drawScore and put a draw message on the board.
+        drawScoreElement.innerText = ++drawScore;
+        announcement.innerText = "IT'S A DRAW";
+        // Otherwise If
+        // the player chose Paper and the computer chose Rock OR
+        // the player chose Scissors and the computer chose Paper OR
+        // the player chose Rock and the computer chose Scissors
+        // (these are the only ways that the player can win so if it's not a draw and the player didn't win, then the player lost)
+    } else if (
+        (playerChoice === 'Paper' && computerChoice === 'Rock') ||
+        (playerChoice === 'Scissors' && computerChoice === 'Paper') ||
+        (playerChoice === 'Rock' && computerChoice === 'Scissors')
+    ) {
+        // Update the playerScore and put a win message on the board.
+        playerScoreElement.innerText = ++playerScore;
+        announcement.innerText = 'YOU WIN!!!';
+        // Otherwise
+    } else {
+        // Update the computerScore and put a lost message on the board.
+        computerScoreElement.innerText = ++computerScore;
+        announcement.innerText = 'YOU LOSE';
     }
 
     // announcement animation <-------  future feature/work in progress
@@ -152,9 +157,6 @@ function calculateResults() {
     //image representation for user and computer
     replacePlayerImage();
     replaceComputerImage();
-    document.getElementById('draw-score').innerText = drawScore;
-    document.getElementById('player-score').innerText = playerScore;
-    document.getElementById('computer-score').innerText = computerScore;
     displayResults();
 }
 
@@ -162,6 +164,7 @@ function calculateResults() {
 //declare results
 //<---- teamtreehouse ---->
 function displayResults() {
+    // The winScreen/loseScreen/drawScreen all have the exact same html structure and are mutually exclusive so the better approach here would be to just append the html and set the text based on the win, lose or draw
     if (playerScore === 3) {
         winScreen.style.display = 'flex';
     } else if (computerScore === 3) {
@@ -173,6 +176,18 @@ function displayResults() {
 // clear score
 //change images per turn
 //<---- MDN ---->
+
+// Here's an area with some opportunity to optimize as well
+// There's a good amount of redundant code here and
+// a large if block that is only different in the name of
+// the image.  Notice that the difference in the name
+// is the same as the playerChoice and computerChoice so
+// you could use concatenation and toLowerCase() here to
+// reduce these two separate functions to one line
+// in the computerPlay and playerPlay functions:
+// computerHand.src = 'img/' + computerChoice.toLowerCase() + '.png';
+// playerHand.src = 'img/' + playerChoice.toLowerCase() + '_left.png';
+
 function replacePlayerImage() {
     if (playerChoice === 'Rock') {
         playerHand.src = './img/rock_left.png';
