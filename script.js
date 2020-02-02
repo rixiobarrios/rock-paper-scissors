@@ -1,4 +1,4 @@
-// PROJECT 1 // ROCK PAPER SCISSORS GAME
+// PROJECT 1 // ROCK PAPER SCISSORS GAME VERSION 1.0
 
 //start the game/button/intro screen
 const playButton = document.querySelector('.intro button');
@@ -7,7 +7,7 @@ playButton.addEventListener('click', function() {
     introScreen.style.display = 'none';
 });
 
-//score
+//initial score
 let playerScore = 0;
 let computerScore = 0;
 let drawScore = 0;
@@ -50,7 +50,7 @@ drawButton.addEventListener('click', function() {
     resetMessage();
 });
 
-//player objects
+//player and computer objects/hands
 const playerHand = document.querySelector('#player-hand');
 const computerHand = document.querySelector('#computer-hand');
 
@@ -146,10 +146,10 @@ function calculateResults() {
     // announcement animation <-------  future feature/work in progress
     // function jumpMessage() {
     //     const announcement = document.getElementById('announcement');
-    //     announcement.classList.add('shake');
+    //     announcement.classList.add('pulse');
     // }
 
-    //image representation for user and computer
+    //image representation for player and computer turn choices
     replacePlayerImage();
     replaceComputerImage();
     document.getElementById('draw-score').innerText = drawScore;
@@ -192,3 +192,4 @@ function replaceComputerImage() {
         computerHand.src = './img/scissors.png';
     }
 }
+// add instructions
