@@ -79,11 +79,11 @@ h1 {
 @media (max-width: 1200px) {
     h1 {
         display: flex;
-        font-size: 5.2vh;
+        font-size: 4vh;
         flex-direction: column;
         align-items: center;
         -webkit-text-stroke-width: 2px;
-        margin-top: 15px;
+        margin-top: 55px;
     }
 }
 
@@ -100,7 +100,7 @@ h1 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: -25px;
+        margin-left: -5px;
         margin-top: -10px;
     }
 }
@@ -116,7 +116,7 @@ h1 {
 
 @media (max-width: 1200px) {
     .points h3 {
-        margin-left: 15px;
+        margin-left: 10px;
     }
 }
 
@@ -189,7 +189,7 @@ h2 {
 @media (max-width: 1200px) {
     h2 {
         display: flex;
-        font-size: 6vh;
+        font-size: 5vh;
         flex-direction: row;
         align-items: center;
         -webkit-text-stroke-width: 2px;
