@@ -68,27 +68,39 @@ html {
 /* game tittle (Rock Paper Scissors) */
 h1 {
     font-family: 'komikax';
-    font-size: 10vh;
+    font-size: 9vh;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px 0 0 0;
     /* css-tricks */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
+
+@media (max-width: 1200px) {
+    h1 {
+        display: flex;
+        font-size: 5.6vh;
+        flex-direction: column;
+        align-items: center;
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
 /* scores */
 .score-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: -50px;
+    margin-left: -60px;
 }
 /* media query */
 @media (max-width: 1200px) {
     .score-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        margin-left: -25px;
     }
 }
 
@@ -100,67 +112,83 @@ h1 {
 .points h3 {
     margin-left: 35px;
 }
-/* titles for scores (You Draw Computer) */
-#you {
-    font-family: 'komikax';
-    font-size: 8vh;
-    color: #fcc02e;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+
+@media (max-width: 1200px) {
+    .points h3 {
+        margin-left: 15px;
+    }
 }
 
-#computer {
-    font-family: 'komikax';
-    font-size: 8vh;
-    color: #fcc02e;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
+/* titles for scores (You, Draw, Computer) */
+#you,
+#computer,
 #draws {
     font-family: 'komikax';
-    font-size: 8vh;
+    font-size: 6vh;
     color: #fcc02e;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 1200px) {
+    #you,
+    #computer,
+    #draws {
+        display: flex;
+        font-size: 4vh;
+        flex-direction: row;
+        align-items: center;
+        -webkit-text-stroke-width: 1px;
+    }
 }
 
 /* score numbers */
-#player-score {
-    font-family: 'komikax';
-    color: #e53935;
-    font-size: 8vh;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
-#computer-score {
-    font-family: 'komikax';
-    color: #e53935;
-    font-size: 8vh;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
+#player-score,
+#computer-score,
 #draw-score {
     font-family: 'komikax';
     color: #e53935;
-    font-size: 8vh;
+    font-size: 6vh;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
+
+@media (max-width: 1200px) {
+    #player-score,
+    #computer-score,
+    #draw-score {
+        display: flex;
+        font-size: 4vh;
+        flex-direction: row;
+        align-items: center;
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
 /* interchangeable announcements (Ready to Play?) */
+/* thoughtbot.com for bounceIn animation*/
+
 h2 {
     font-family: 'komikax';
     font-size: 8vh;
     color: white;
     text-align: center;
     justify-content: center;
+    animation-duration: 2s;
+    animation-name: bounceIn;
+    animation-iteration-count: initial;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    animation-name: pulse;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        display: flex;
+        font-size: 6vh;
+        flex-direction: row;
+        align-items: center;
+        -webkit-text-stroke-width: 1px;
+    }
 }
 
 /* images on stage */
@@ -169,6 +197,28 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     height: 300px;
+    margin: -50px 0px 0px 0px;
+}
+
+@media (max-width: 1200px) {
+    .image-container {
+        height: 230px;
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+#player-hand,
+#computer-hand {
+    height: 300px;
+    width: 300px;
+}
+
+@media (max-width: 1200px) {
+    #player-hand,
+    #computer-hand {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 /* images on stage animation */
@@ -184,12 +234,15 @@ h2 {
         transform: translateY(-50px);
     }
 }
+
 /* player's choices */
 .buttons-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 130px;
+    margin: 0px 0px -20px 0px;
 }
 
 @media (max-width: 1200px) {
@@ -267,15 +320,40 @@ h2 {
 #scissors:focus {
     outline: none;
 }
+
+@media (max-width: 1200px) {
+    #rock,
+    #paper,
+    #scissors {
+        display: flex;
+        background-size: 80%;
+    }
+}
+
 /* choose wisely message */
+
 #choose {
     font-family: 'komikax';
-    font-size: 10vh;
+    font-size: 8vh;
     text-align: center;
     color: white;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
+
+@media (max-width: 1200px) {
+    #choose {
+        display: flex;
+        font-size: 6vh;
+        flex-direction: row;
+        justify-content: center;
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
 /* screens */
 .win {
     background: #fcc02e;
@@ -406,6 +484,14 @@ h2 {
     outline: none;
 }
 
+@media (max-width: 1200px) {
+    .win h1,
+    .draw h1,
+    .lose h1 {
+        font-size: 8vh;
+    }
+}
+
 @keyframes pulse {
     from {
         transform: scale(1);
@@ -418,6 +504,20 @@ h2 {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
     }
 }
 

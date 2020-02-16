@@ -65,7 +65,7 @@ function resetMessage() {
     document.getElementById('announcement').innerText = 'READY TO PLAY?';
 }
 
-//player choses from three options/buttons
+//player chooses from three options/buttons
 //add event listeners
 //<---- MDN syntax ---->
 
@@ -144,9 +144,14 @@ function calculateResults() {
     }
 
     // announcement animation <-------  future feature/work in progress
-    // function jumpMessage() {
+    // function bounceInMessage() {
     //     const announcement = document.getElementById('announcement');
-    //     announcement.classList.add('pulse');
+    //     announcement.classList.add('bounce');
+    // }
+
+    // function bounceInMessage() {
+    //     const announcement = document.getElementById('announcement');
+    //     announcement.addEventListener('bounce');
     // }
 
     //image representation for player and computer turn choices
