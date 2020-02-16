@@ -161,10 +161,12 @@ Submit contribution through my repository for approval through this link:
 
 ## Fixes
 
+1. Working on @media screen rendering for mobile devices
 2. Sage Kearny suggested to elevate the top layer using .intro { z-index: 2;} on CSS
-3.
-4.
-5.  6. Hou Chia helped me find a camelCase error on computerScore =+ 1; on line 119
+3. I used flexbox and margins to align all items
+4. I was able to find a tutorial and help from my cohort tutors
+5. Was able to create a function using syntax from the internet and help from tutors
+6. Hou Chia helped me find a camelCase error on computerScore =+ 1; on line 119
 
 ## Attributions
 
@@ -177,6 +179,7 @@ Online GIF maker used [hnet.com](https://hnet.com/)
 Images edited using [pixlr.com](https://pixlr.com/)
 Fonts provided by [dafont.com](https://www.dafont.com)
 Background vector created by [freepik.com](https://www.freepik.com/home)
+Favicon made using [favicon.io](https://favicon.io/)
 
 # Special Thanks
 
