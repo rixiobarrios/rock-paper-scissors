@@ -79,7 +79,7 @@ h1 {
 @media (max-width: 1200px) {
     h1 {
         display: flex;
-        font-size: 5.6vh;
+        font-size: 5.2vh;
         flex-direction: column;
         align-items: center;
         -webkit-text-stroke-width: 2px;
