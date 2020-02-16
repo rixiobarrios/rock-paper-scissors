@@ -27,6 +27,7 @@ html {
     width: 100vw;
     height: 100vh;
     position: fixed;
+    margin: -55px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +69,7 @@ html {
 /* game tittle (Rock Paper Scissors) */
 h1 {
     font-family: 'komikax';
-    font-size: 10vh;
+    font-size: 9vh;
     color: white;
     text-align: center;
     /* css-tricks */
