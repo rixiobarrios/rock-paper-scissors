@@ -14,6 +14,14 @@
 
 <img width="746" alt="" src="https://user-images.githubusercontent.com/55994508/72128314-1adb8280-3338-11ea-8718-715ff39c4a96.gif">
 
+## Browser Preview
+
+<img width="746" alt="" src="https://user-images.githubusercontent.com/55994508/74900575-e19a2780-5365-11ea-83ec-09a7991d47d3.png">
+
+## Mobile Preview
+
+<img width="746" alt="" src="https://user-images.githubusercontent.com/55994508/74900433-63d61c00-5365-11ea-99fb-b4e896899a94.png">
+
 ## Target Audience
 
 Anyone between the ages of _3 and beyond_.
