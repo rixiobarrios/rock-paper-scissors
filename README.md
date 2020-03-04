@@ -151,6 +151,7 @@ This code help me simulate the choices another player would make.(\_source: `Gee
 
 -   [HTML](https://www.w3.org/TR/html52/)
 -   [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+-   [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 -   [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Contribution Guidelines
@@ -178,16 +179,16 @@ Submit contribution through my repository for approval through this link:
 
 ## Attributions
 
-Game inspired by **Rock Paper Scissors** by Afiniti [afiniti.com](https://www.afiniti.com/corporate/rock-paper-scissors)
-Wireframes were made using [wireframe.cc](https://wireframe.cc)
-Personal branding logo for this file was created using [freelogodesign.org](https://www.freelogodesign.org)
-Rules, instructions and general information for this game were taken from **The World Rock Paper Scissors Association**'s website [wrpsa](https://www.wrpsa.com)
-Some graphics for this game were taken from an **Esquire** article titled; **How to Win at Rock Paper Scissors** [esquireme.com](https://www.esquireme.com/content/20945-how-to-win-at-rock-paper-scissors)
-Online GIF maker used [hnet.com](https://hnet.com/)
-Images edited using [pixlr.com](https://pixlr.com/)
-Fonts provided by [dafont.com](https://www.dafont.com)
-Background vector created by [freepik.com](https://www.freepik.com/home)
-Favicon made using [favicon.io](https://favicon.io/)
+-Game inspired by **Rock Paper Scissors** by Afiniti [afiniti.com](https://www.afiniti.com/corporate/rock-paper-scissors)
+-Wireframes were made using [wireframe.cc](https://wireframe.cc)
+-Personal branding logo for this file was created using [freelogodesign.org](https://www.freelogodesign.org)
+-Rules, instructions and general information for this game were taken from **The World Rock Paper Scissors Association**'s website [wrpsa](https://www.wrpsa.com)
+-Some graphics for this game were taken from an **Esquire** article titled; **How to Win at Rock Paper Scissors** [esquireme.com](https://www.esquireme.com/content/20945-how-to-win-at-rock-paper-scissors)
+-Online GIF maker used [hnet.com](https://hnet.com/)
+-Images edited using [pixlr.com](https://pixlr.com/)
+-Fonts provided by [dafont.com](https://www.dafont.com)
+-Background vector created by [freepik.com](https://www.freepik.com/home)
+-Favicon made using [favicon.io](https://favicon.io/)
 
 # Special Thanks
 
