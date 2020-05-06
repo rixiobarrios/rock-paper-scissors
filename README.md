@@ -1,6 +1,8 @@
-<img width="746" src="https://user-images.githubusercontent.com/55994508/73614396-38f97300-45c4-11ea-96f6-1c68497dbe56.png" alt="logo" style="display: block; margin: 0 auto" />
+<img width="746" src="https://user-images.githubusercontent.com/55994508/81236440-d947a500-8fc2-11ea-852a-3a7b41619192.png" alt="logo" style="display: block; margin: 0 auto" />
 
-# Project #1: Rock Paper Scissors Game Version 1.0
+# Project# 1: Rock Paper Scissors Game by Rixio Barrios
+
+-   [Documentation for Project# 1 Assignment by General Assembly](https://www.notlinkedyet.com)
 
 ## Definition
 
@@ -34,7 +36,7 @@
 -   [Attributions](https://github.com/rixiobarrios/rock-paper-scissors#Atributions)
 -   [Special Thanks](https://github.com/rixiobarrios/rock-paper-scissors#Special-Thanks)
 -   [Acknowledgement](https://github.com/rixiobarrios/rock-paper-scissors#Acknowledgement)
--   [Testing Notes](https://github.com/rixiobarrios/rock-paper-scissors#Testing-Notes)
+-   [Feedback](https://github.com/rixiobarrios/rock-paper-scissors#Feedback)
 
 # Link to the Game
 
@@ -228,11 +230,9 @@ Robert Groves, Kathleen Graham
 I would like to give special thanks to our tutors as well as my cohort mates who gave me the golden opportunity to do this wonderful project. I had a good chance to further my knowledge as an aspiring software engineer by doing a lot of research and practicing my newly acquired knowledge. I came to know about so many new things, I am really thankful to everyone who contributed to this experience.
 Secondly I would also like to thank my family and friends who helped me a lot in finalizing this project within the limited time frame. A **big** shout out to my friend **Chris Mendoza** for supporting and believing in me and my potential to succeed(_Gracias hermano_).
 
-**Also Acknowledged**
-
 `w3chools.com, stackoverflow.com, css-tricks.com, github.com, codepen.io, freecodecamp.org,eloquentjavascript.net, teamtreehouse.com, developer.mozilla.org, medium.com, learnlayout.com, mathjs.org, geeksforgeeks.org, flaviocopes.com, tutorialspoint.com, guru99.com, javascript.info, javatpoint.com, bitdegree.org, java2s.com, mysamplecode.com, edureka.co, support.e2ma.net, hyperlinkcode.com, wikipedia.org, afiniti.com`
 
-# Testing Notes
+# Feedback
 
 Robert Groves Feedback;
 Hey Rixio, it's looking pretty good! I took some time just to play with the game and here are my thoughts:
