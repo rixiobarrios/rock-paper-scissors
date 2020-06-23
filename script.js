@@ -1,9 +1,25 @@
 // PROJECT 1 // ROCK PAPER SCISSORS GAME VERSION 1.0
 
+//start music
+function myStartMusic() {
+    let startMusic = document.getElementById('start-music');
+    startMusic.play();
+}
+myStartMusic();
+
+window.location.reload = function () {
+    myStartMusic();
+};
+// let myStartMusic = document.getElementById('start-music');
+// function play() {
+
+// }
+// myStartMusic.play()
+
 //start the game/button/intro screen
 const playButton = document.querySelector('.intro button');
 const introScreen = document.querySelector('.intro');
-playButton.addEventListener('click', function() {
+playButton.addEventListener('click', function () {
     introScreen.style.display = 'none';
 });
 
@@ -22,11 +38,22 @@ function resetScores() {
     document.getElementById('draw-score').innerText = drawScore;
 }
 
+// Game sounds
+//<---- The Coding Train ---->
+let badSound = new Audio((src = 'sounds/bad.mp3'));
+let clickSound = new Audio((src = 'sounds/click.mp3'));
+let drawSound = new Audio((src = 'sounds/draw.mp3'));
+let goodSound = new Audio((src = 'sounds/good.mp3'));
+let loserSound = new Audio((src = 'sounds/loser.mp3'));
+let startSound = new Audio((src = 'sounds/start.mp3'));
+let tieSound = new Audio((src = 'sounds/tie.mp3'));
+let winSound = new Audio((src = 'sounds/win.mp3'));
+
 //screen transitions
 //<---- w3schools ---->
 const winButton = document.querySelector('.win button');
 const winScreen = document.querySelector('.win');
-winButton.addEventListener('click', function() {
+winButton.addEventListener('click', function () {
     winScreen.style.display = 'none';
     resetScores();
     resetHands();
@@ -35,7 +62,7 @@ winButton.addEventListener('click', function() {
 
 const loseButton = document.querySelector('.lose button');
 const loseScreen = document.querySelector('.lose');
-loseButton.addEventListener('click', function() {
+loseButton.addEventListener('click', function () {
     loseScreen.style.display = 'none';
     resetScores();
     resetHands();
@@ -43,7 +70,7 @@ loseButton.addEventListener('click', function() {
 });
 const drawButton = document.querySelector('.draw button');
 const drawScreen = document.querySelector('.draw');
-drawButton.addEventListener('click', function() {
+drawButton.addEventListener('click', function () {
     drawScreen.style.display = 'none';
     resetScores();
     resetHands();
@@ -89,7 +116,7 @@ function handleClick(event) {
     playerChoice = event.target.innerText;
     playerHand.classList.add('shake');
     computerHand.classList.add('shake');
-    setTimeout(function() {
+    setTimeout(function () {
         playerHand.classList.remove('shake');
         computerHand.classList.remove('shake');
         computerPlay();
@@ -117,30 +144,39 @@ function calculateResults() {
     if (playerChoice === 'Rock' && computerChoice === 'Paper') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
         computerScore += 1;
+        badSound.play();
     } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
         document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
+        goodSound.play();
     } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
         document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
+        goodSound.play();
     } else if (playerChoice === 'Paper' && computerChoice === 'Scissors') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
         computerScore += 1;
+        badSound.play();
     } else if (playerChoice === 'Scissors' && computerChoice === 'Rock') {
         document.getElementById('announcement').innerText = 'YOU LOSE';
         computerScore += 1;
+        badSound.play();
     } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
         document.getElementById('announcement').innerText = 'YOU WIN!!!';
         playerScore += 1;
+        goodSound.play();
     } else if (playerChoice === 'Rock' && computerChoice === 'Rock') {
         document.getElementById('announcement').innerText = "IT'S A DRAW";
         drawScore += 1;
+        drawSound.play();
     } else if (playerChoice === 'Paper' && computerChoice === 'Paper') {
         document.getElementById('announcement').innerText = "IT'S A DRAW";
         drawScore += 1;
+        drawSound.play();
     } else if (playerChoice === 'Scissors' && computerChoice === 'Scissors') {
         document.getElementById('announcement').innerText = "IT'S A DRAW";
         drawScore += 1;
+        drawSound.play();
     }
 
     // announcement animation <-------  future feature/work in progress
@@ -169,10 +205,16 @@ function calculateResults() {
 function displayResults() {
     if (playerScore === 3) {
         winScreen.style.display = 'flex';
+        goodSound.pause();
+        winSound.play();
     } else if (computerScore === 3) {
         loseScreen.style.display = 'flex';
+        badSound.pause();
+        loserSound.play();
     } else if (drawScore === 3) {
         drawScreen.style.display = 'flex';
+        drawSound.pause();
+        tieSound.play();
     }
 }
 // clear score

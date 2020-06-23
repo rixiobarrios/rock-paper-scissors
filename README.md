@@ -159,8 +159,8 @@ This code help me simulate the choices another player would make.(\_source: `Gee
 
 -   [x] Try again and play again buttons to restart the game
 -   [x] Animations
--   [ ] Sounds
--   [ ] Mobile responsive design
+-   [x] Sounds
+-   [x] Mobile responsive design
 
 -   **Gold**
 
@@ -215,6 +215,7 @@ Submit contribution through my repository for approval through this link:
 -Fonts provided by [dafont.com](https://www.dafont.com)
 -Background vector created by [freepik.com](https://www.freepik.com/home)
 -Favicon made using [favicon.io](https://favicon.io/)
+-Game sounds downloaded from [zedge.net](https://www.zedge.net)
 
 # Special Thanks
 
