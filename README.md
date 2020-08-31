@@ -13,6 +13,7 @@
 ## Table of Contents
 
 -   [Link to the Game](https://github.com/rixiobarrios/rock-paper-scissors#Link-to-the-Game)
+-   [Link to the Linkedin Article](https://github.com/rixiobarrios/rock-paper-scissors#Link-to-the-Linkedin-Article)
 -   [Game Preview](https://github.com/rixiobarrios/rock-paper-scissors#Game-Preview)
 -   [Browser Preview](https://github.com/rixiobarrios/rock-paper-scissors#Browser-Preview)
 -   [Mobile Preview](https://github.com/rixiobarrios/rock-paper-scissors#Mobile-Preview)
