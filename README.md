@@ -1,6 +1,6 @@
 <img width="746" src="https://user-images.githubusercontent.com/55994508/81236440-d947a500-8fc2-11ea-852a-3a7b41619192.png" alt="logo" style="display: block; margin: 0 auto" />
 
-# PROJECT 1: GA-SEI129
+# PROJECT 1: GA-SEIR-129
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c7d22ff9-2dcc-4222-8812-5f3ace848be6/deploy-status)](https://app.netlify.com/sites/my-rock-paper-scissors/deploys)
 
