@@ -13,7 +13,7 @@
 ## Table of Contents
 
 -   [Link to the Game](https://github.com/rixiobarrios/rock-paper-scissors#Link-to-the-Game)
--   [Link to the Linkedin Article](https://github.com/rixiobarrios/rock-paper-scissors#Link-to-the-Linkedin-Article)
+-   [Link to the Article on Linkedin](https://github.com/rixiobarrios/rock-paper-scissors#Link-to-the-Article-on-Linkedin)
 -   [Game Preview](https://github.com/rixiobarrios/rock-paper-scissors#Game-Preview)
 -   [Browser Preview](https://github.com/rixiobarrios/rock-paper-scissors#Browser-Preview)
 -   [Mobile Preview](https://github.com/rixiobarrios/rock-paper-scissors#Mobile-Preview)
@@ -45,7 +45,7 @@
 
 [Game of Rock Paper Scissors](https://my-rock-paper-scissors.netlify.app/)
 
-# Link to the Linkedin Article
+# Link to the Article on Linkedin
 
 [Showcasing my First Completed Project for General Assembly](https://www.linkedin.com/pulse/showcasing-my-first-completed-project-general-assembly-rixio-barrios/)
 
