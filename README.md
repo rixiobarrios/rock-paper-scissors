@@ -42,7 +42,11 @@
 
 # Link to the Game
 
-[Game of Rock Paper Scissors](https://xenodochial-tereshkova-88fbb0.netlify.app)
+[Game of Rock Paper Scissors](https://my-rock-paper-scissors.netlify.app/)
+
+# Link to the Linkedin Article
+
+[Showcasing my First Completed Project for General Assembly](https://www.linkedin.com/pulse/showcasing-my-first-completed-project-general-assembly-rixio-barrios/)
 
 # Game Preview
 
