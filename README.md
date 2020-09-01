@@ -6,7 +6,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c7d22ff9-2dcc-4222-8812-5f3ace848be6/deploy-status)](https://app.netlify.com/sites/my-rock-paper-scissors/deploys)
 
--   [Documentation for Project# 1 Assignment by General Assembly](https://www.notlinkedyet.com)
+[Documentation for Project# 1 Assignment by General Assembly](https://www.notlinkedyet.com)
 
 ## Definition
 
