@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* background */
 /* <---- css-tricks ----> */
 html {
@@ -15,12 +16,14 @@ html {
     letter-spacing: 2px;
     text-align: center;
 }
+
 /* stack overflow */
 /* fonts file */
 @font-face {
     font-family: 'komikax';
     src: url('./font/KOMIKAX_.ttf');
 }
+
 /* intro screen */
 .intro {
     background: #fcc02e;
@@ -48,6 +51,7 @@ html {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
+
 /* stack overflow */
 .intro button {
     height: 300px;
@@ -81,6 +85,7 @@ html {
 .intro button:focus {
     outline: none;
 }
+
 /* game tittle (Rock Paper Scissors) */
 h1 {
     font-family: 'komikax';
@@ -110,6 +115,7 @@ h1 {
     justify-content: center;
     margin-left: -60px;
 }
+
 /* media query */
 @media (max-width: 700px) {
     .score-container {
@@ -188,7 +194,6 @@ h1 {
 
 /* interchangeable announcements (Ready to Play?) */
 /* thoughtbot.com for bounceIn animation*/
-
 h2 {
     font-family: 'komikax';
     font-size: 8vh;
@@ -292,6 +297,7 @@ h2 {
 #rock:hover {
     transform: translateY(-1rem);
 }
+
 /* medium.com */
 #rock:focus {
     outline: none;
@@ -352,7 +358,6 @@ h2 {
 }
 
 /* choose wisely message */
-
 #choose {
     font-family: 'komikax';
     font-size: 8vh;
@@ -597,4 +602,3 @@ h2 {
 a {
     text-decoration: none;
 }
-/* use modal */
