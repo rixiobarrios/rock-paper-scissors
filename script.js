@@ -10,11 +10,6 @@ myStartMusic();
 window.location.reload = function () {
     myStartMusic();
 };
-// let myStartMusic = document.getElementById('start-music');
-// function play() {
-
-// }
-// myStartMusic.play()
 
 //start the game/button/intro screen
 const playButton = document.querySelector('.intro button');
@@ -23,7 +18,7 @@ playButton.addEventListener('click', function () {
     introScreen.style.display = 'none';
 });
 
-//initial score
+//set initial score
 let playerScore = 0;
 let computerScore = 0;
 let drawScore = 0;
@@ -38,7 +33,7 @@ function resetScores() {
     document.getElementById('draw-score').innerText = drawScore;
 }
 
-// Game sounds
+// game sounds
 //<---- The Coding Train ---->
 let badSound = new Audio((src = 'sounds/bad.mp3'));
 let clickSound = new Audio((src = 'sounds/click.mp3'));
@@ -95,7 +90,6 @@ function resetMessage() {
 //player chooses from three options/buttons
 //add event listeners
 //<---- MDN syntax ---->
-
 const rockButton = document.getElementById('rock');
 rockButton.addEventListener('click', handleClick);
 
@@ -108,8 +102,8 @@ scissorsButton.addEventListener('click', handleClick);
 //tell the computer when to respond
 //slowdown response
 //add animation
-let playerChoice;
 //<---- w3schools ---->
+let playerChoice;
 function handleClick(event) {
     playerHand.src = './img/rock_left.png';
     computerHand.src = './img/rock.png';
@@ -125,18 +119,18 @@ function handleClick(event) {
 
 //create an array with the three elements to chose from
 //generate a random simulated computer response
-//store computers choice in a variable
+//store computers choice
+//<---- geeksforgeeks syntax ---->
 choices = ['Rock', 'Paper', 'Scissors'];
 
 let computerChoice;
-//<---- geeksforgeeks syntax ---->
 function computerPlay() {
     computerChoice = choices[Math.floor(Math.random() * choices.length)];
     calculateResults();
 }
 
 //we compare the choices
-//determine and declare winner
+//determine outcome
 //update screen message
 //<---- w3schools syntax ---->
 //<---- MDN syntax ---->
@@ -179,18 +173,7 @@ function calculateResults() {
         drawSound.play();
     }
 
-    // announcement animation <-------  future feature/work in progress
-    // function bounceInMessage() {
-    //     const announcement = document.getElementById('announcement');
-    //     announcement.classList.add('bounce');
-    // }
-
-    // function bounceInMessage() {
-    //     const announcement = document.getElementById('announcement');
-    //     announcement.addEventListener('bounce');
-    // }
-
-    //image representation for player and computer turn choices
+    //image representation for player and computer choices
     replacePlayerImage();
     replaceComputerImage();
     document.getElementById('draw-score').innerText = drawScore;
@@ -217,6 +200,7 @@ function displayResults() {
         tieSound.play();
     }
 }
+
 // clear score
 //change images per turn
 //<---- MDN ---->
@@ -239,4 +223,3 @@ function replaceComputerImage() {
         computerHand.src = './img/scissors.png';
     }
 }
-// add instructions
